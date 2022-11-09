@@ -1,1 +1,1 @@
-# used-car-prices-predict
+# 중고차 가격 예측 프로젝트
