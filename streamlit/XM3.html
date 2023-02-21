@@ -1,0 +1,3801 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_97ed861472004e45b43ac525f1f586aa {
+                    position: relative;
+                    width: 500.0px;
+                    height: 400.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_97ed861472004e45b43ac525f1f586aa" ></div>
+        
+</body>
+<script>    
+    
+            var map_97ed861472004e45b43ac525f1f586aa = L.map(
+                "map_97ed861472004e45b43ac525f1f586aa",
+                {
+                    center: [36.24, 128.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7.3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b4b6bb1c46c447698fe32abb4f8b22e4 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_97ed861472004e45b43ac525f1f586aa);
+        
+    
+            var marker_cluster_b5090ef68f35448790fbb2b77ba77e99 = L.markerClusterGroup(
+                {}
+            );
+            map_97ed861472004e45b43ac525f1f586aa.addLayer(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var marker_fffaee789b0d475198c37084c21cacf4 = L.marker(
+                [35.9479291, 126.9578025],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_409c1eb9f44f4cdc814aebba4be5e7c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fffaee789b0d475198c37084c21cacf4.setIcon(icon_409c1eb9f44f4cdc814aebba4be5e7c1);
+        
+    
+        var popup_a7452f605ec44f74b768123fdc67d6ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_576e565696f843c1b99f125bad67c693 = $(`<div id="html_576e565696f843c1b99f125bad67c693" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 135부9243 가격: 2200만원</pre></div>`)[0];
+            popup_a7452f605ec44f74b768123fdc67d6ee.setContent(html_576e565696f843c1b99f125bad67c693);
+        
+
+        marker_fffaee789b0d475198c37084c21cacf4.bindPopup(popup_a7452f605ec44f74b768123fdc67d6ee)
+        ;
+
+        
+    
+    
+            marker_fffaee789b0d475198c37084c21cacf4.bindTooltip(
+                `<div>
+                     뉴합동모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1029fc5c60c40a08608c457327e8e94 = L.marker(
+                [35.152140100000004, 126.8900561],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_c812e53edf464dc8a188b67080173db6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c1029fc5c60c40a08608c457327e8e94.setIcon(icon_c812e53edf464dc8a188b67080173db6);
+        
+    
+        var popup_b60e095c98cd455f975fe0699a5b0652 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3fb56fa068f460c9701b1d377f3d50c = $(`<div id="html_a3fb56fa068f460c9701b1d377f3d50c" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE</pre><pre>번호판: 185소2619 가격: 1845만원</pre></div>`)[0];
+            popup_b60e095c98cd455f975fe0699a5b0652.setContent(html_a3fb56fa068f460c9701b1d377f3d50c);
+        
+
+        marker_c1029fc5c60c40a08608c457327e8e94.bindPopup(popup_b60e095c98cd455f975fe0699a5b0652)
+        ;
+
+        
+    
+    
+            marker_c1029fc5c60c40a08608c457327e8e94.bindTooltip(
+                `<div>
+                     (유)행운자동차
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb0990d4128f46a0a320076b463b0f1c = L.marker(
+                [37.446902, 126.7315126],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_258c7725070e40e4ac98cdc3c27fd99d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cb0990d4128f46a0a320076b463b0f1c.setIcon(icon_258c7725070e40e4ac98cdc3c27fd99d);
+        
+    
+        var popup_e70f52c483c143c8864a8e156bdd4314 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60a8ae4c11464c5aa4c9034decd026c6 = $(`<div id="html_60a8ae4c11464c5aa4c9034decd026c6" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 104우6207 가격: 2290만원</pre></div>`)[0];
+            popup_e70f52c483c143c8864a8e156bdd4314.setContent(html_60a8ae4c11464c5aa4c9034decd026c6);
+        
+
+        marker_cb0990d4128f46a0a320076b463b0f1c.bindPopup(popup_e70f52c483c143c8864a8e156bdd4314)
+        ;
+
+        
+    
+    
+            marker_cb0990d4128f46a0a320076b463b0f1c.bindTooltip(
+                `<div>
+                     주식회사 이삭모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c89df538e2244c9483431e56e813d6a8 = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_3684989b01ac4f3c8e92216d58a7bdac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c89df538e2244c9483431e56e813d6a8.setIcon(icon_3684989b01ac4f3c8e92216d58a7bdac);
+        
+    
+        var popup_5b06973c77b4469ba40cf212b1eb4b48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d310052a05b4ebe8a2d448378311e5e = $(`<div id="html_1d310052a05b4ebe8a2d448378311e5e" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 257구9329 가격: 2270만원</pre></div>`)[0];
+            popup_5b06973c77b4469ba40cf212b1eb4b48.setContent(html_1d310052a05b4ebe8a2d448378311e5e);
+        
+
+        marker_c89df538e2244c9483431e56e813d6a8.bindPopup(popup_5b06973c77b4469ba40cf212b1eb4b48)
+        ;
+
+        
+    
+    
+            marker_c89df538e2244c9483431e56e813d6a8.bindTooltip(
+                `<div>
+                     희망드림자동차
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53a28516b1a440e7bfb828fc6d101b54 = L.marker(
+                [35.1765, 129.0793],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_5a71a5db0dfe4c2bb8cffeeab1d4e032 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_53a28516b1a440e7bfb828fc6d101b54.setIcon(icon_5a71a5db0dfe4c2bb8cffeeab1d4e032);
+        
+    
+        var popup_451a96cb96a846afb548ed6d644bf9bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aff99d14c1cc4419a45813f8f29841bd = $(`<div id="html_aff99d14c1cc4419a45813f8f29841bd" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 295너8471 가격: 2000만원</pre></div>`)[0];
+            popup_451a96cb96a846afb548ed6d644bf9bc.setContent(html_aff99d14c1cc4419a45813f8f29841bd);
+        
+
+        marker_53a28516b1a440e7bfb828fc6d101b54.bindPopup(popup_451a96cb96a846afb548ed6d644bf9bc)
+        ;
+
+        
+    
+    
+            marker_53a28516b1a440e7bfb828fc6d101b54.bindTooltip(
+                `<div>
+                     에이원오토모빌
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_310a2f0a008b43b295fa45131ab1f15d = L.marker(
+                [35.1361, 129.0843999],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_51401261bb1648ecafaad87c1cf646ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_310a2f0a008b43b295fa45131ab1f15d.setIcon(icon_51401261bb1648ecafaad87c1cf646ea);
+        
+    
+        var popup_83657cb3e1404a17b5206c6fc90a7ce5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be48c8b6a06d4df68b62c2d87311be6b = $(`<div id="html_be48c8b6a06d4df68b62c2d87311be6b" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE+</pre><pre>번호판: 309모1445 가격: 1980만원</pre></div>`)[0];
+            popup_83657cb3e1404a17b5206c6fc90a7ce5.setContent(html_be48c8b6a06d4df68b62c2d87311be6b);
+        
+
+        marker_310a2f0a008b43b295fa45131ab1f15d.bindPopup(popup_83657cb3e1404a17b5206c6fc90a7ce5)
+        ;
+
+        
+    
+    
+            marker_310a2f0a008b43b295fa45131ab1f15d.bindTooltip(
+                `<div>
+                     에이스모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a9372602da14f95b6e4dac891488fed = L.marker(
+                [37.5509, 126.8497],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_9a5e12d99abf474798e77f66821708fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5a9372602da14f95b6e4dac891488fed.setIcon(icon_9a5e12d99abf474798e77f66821708fb);
+        
+    
+        var popup_2128cad7ced940e5bb4a111aa5dd10af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c331ce473ee4c09bb0680ab6a54cac2 = $(`<div id="html_2c331ce473ee4c09bb0680ab6a54cac2" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 303마8929 가격: 2189만원</pre></div>`)[0];
+            popup_2128cad7ced940e5bb4a111aa5dd10af.setContent(html_2c331ce473ee4c09bb0680ab6a54cac2);
+        
+
+        marker_5a9372602da14f95b6e4dac891488fed.bindPopup(popup_2128cad7ced940e5bb4a111aa5dd10af)
+        ;
+
+        
+    
+    
+            marker_5a9372602da14f95b6e4dac891488fed.bindTooltip(
+                `<div>
+                     신성유씨에스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_346067fda1464ece890dbf12b8d639b6 = L.marker(
+                [35.1361, 129.0843999],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_f07ded74b3da4dc3875130f276401e66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_346067fda1464ece890dbf12b8d639b6.setIcon(icon_f07ded74b3da4dc3875130f276401e66);
+        
+    
+        var popup_01f047a373a8439f968d66894aedf37a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61a7bbf9b37547c4bf517fbaa56ad3f9 = $(`<div id="html_61a7bbf9b37547c4bf517fbaa56ad3f9" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 103부2632 가격: 2180만원</pre></div>`)[0];
+            popup_01f047a373a8439f968d66894aedf37a.setContent(html_61a7bbf9b37547c4bf517fbaa56ad3f9);
+        
+
+        marker_346067fda1464ece890dbf12b8d639b6.bindPopup(popup_01f047a373a8439f968d66894aedf37a)
+        ;
+
+        
+    
+    
+            marker_346067fda1464ece890dbf12b8d639b6.bindTooltip(
+                `<div>
+                     봉카
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da01ac68ecd349dc9f137ee94ad5b71b = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_9f27d949541c405d95ae5bda7ada0144 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_da01ac68ecd349dc9f137ee94ad5b71b.setIcon(icon_9f27d949541c405d95ae5bda7ada0144);
+        
+    
+        var popup_1ba333b269e14e54b25fbfabf3107d5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_461b64bef0134a3793f159a9408f1965 = $(`<div id="html_461b64bef0134a3793f159a9408f1965" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 169오3900 가격: 2200만원</pre></div>`)[0];
+            popup_1ba333b269e14e54b25fbfabf3107d5a.setContent(html_461b64bef0134a3793f159a9408f1965);
+        
+
+        marker_da01ac68ecd349dc9f137ee94ad5b71b.bindPopup(popup_1ba333b269e14e54b25fbfabf3107d5a)
+        ;
+
+        
+    
+    
+            marker_da01ac68ecd349dc9f137ee94ad5b71b.bindTooltip(
+                `<div>
+                     오토라운지
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe04367f662f45b592db10a55e651ca4 = L.marker(
+                [37.5509, 126.8497],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_85a7bae9fd2042ac92c8c1d0b4b7566b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fe04367f662f45b592db10a55e651ca4.setIcon(icon_85a7bae9fd2042ac92c8c1d0b4b7566b);
+        
+    
+        var popup_1e12222544e04163ad8780e223fd192c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1520b029fad9496e8f2a31a2295b8e74 = $(`<div id="html_1520b029fad9496e8f2a31a2295b8e74" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 112소2607 가격: 2390만원</pre></div>`)[0];
+            popup_1e12222544e04163ad8780e223fd192c.setContent(html_1520b029fad9496e8f2a31a2295b8e74);
+        
+
+        marker_fe04367f662f45b592db10a55e651ca4.bindPopup(popup_1e12222544e04163ad8780e223fd192c)
+        ;
+
+        
+    
+    
+            marker_fe04367f662f45b592db10a55e651ca4.bindTooltip(
+                `<div>
+                     주식회사 영모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97d7d56be23d4c9e93e5f10e5d4679a2 = L.marker(
+                [36.9924966, 127.1127168],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_0a47dd0c7bdd49bbbe828c1b12fb2953 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_97d7d56be23d4c9e93e5f10e5d4679a2.setIcon(icon_0a47dd0c7bdd49bbbe828c1b12fb2953);
+        
+    
+        var popup_7777b18d3a4b47ada87199252d7b573d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94f5b13e232947ac9b754c8835ac3bc0 = $(`<div id="html_94f5b13e232947ac9b754c8835ac3bc0" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 176어5783 가격: 2200만원</pre></div>`)[0];
+            popup_7777b18d3a4b47ada87199252d7b573d.setContent(html_94f5b13e232947ac9b754c8835ac3bc0);
+        
+
+        marker_97d7d56be23d4c9e93e5f10e5d4679a2.bindPopup(popup_7777b18d3a4b47ada87199252d7b573d)
+        ;
+
+        
+    
+    
+            marker_97d7d56be23d4c9e93e5f10e5d4679a2.bindTooltip(
+                `<div>
+                     플러스상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4714bb82ff18463cbea4a8e20d433d19 = L.marker(
+                [35.1521, 128.9911],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_5bb041226ee047ad80de9f469b04c8a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4714bb82ff18463cbea4a8e20d433d19.setIcon(icon_5bb041226ee047ad80de9f469b04c8a2);
+        
+    
+        var popup_b52d7ad7c4374310ad7b6f8bec743477 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2aa1c27b3f17435a923d398c2902a1f5 = $(`<div id="html_2aa1c27b3f17435a923d398c2902a1f5" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE</pre><pre>번호판: 139주5997 가격: 2150만원</pre></div>`)[0];
+            popup_b52d7ad7c4374310ad7b6f8bec743477.setContent(html_2aa1c27b3f17435a923d398c2902a1f5);
+        
+
+        marker_4714bb82ff18463cbea4a8e20d433d19.bindPopup(popup_b52d7ad7c4374310ad7b6f8bec743477)
+        ;
+
+        
+    
+    
+            marker_4714bb82ff18463cbea4a8e20d433d19.bindTooltip(
+                `<div>
+                     (주)건우모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4496a4c4eb24c929013f6ecf8125e1e = L.marker(
+                [37.5509, 126.8497],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_deab488ea32e42808e1999803e4baec0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a4496a4c4eb24c929013f6ecf8125e1e.setIcon(icon_deab488ea32e42808e1999803e4baec0);
+        
+    
+        var popup_9df0aa61b50041d08e9e7afd520611df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b9dad390c144f0eaf97f9b559650d7c = $(`<div id="html_1b9dad390c144f0eaf97f9b559650d7c" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 389나2051 가격: 2299만원</pre></div>`)[0];
+            popup_9df0aa61b50041d08e9e7afd520611df.setContent(html_1b9dad390c144f0eaf97f9b559650d7c);
+        
+
+        marker_a4496a4c4eb24c929013f6ecf8125e1e.bindPopup(popup_9df0aa61b50041d08e9e7afd520611df)
+        ;
+
+        
+    
+    
+            marker_a4496a4c4eb24c929013f6ecf8125e1e.bindTooltip(
+                `<div>
+                     (주)티에스모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca05fd437d8143abb154fbf3482d7ed7 = L.marker(
+                [35.2446, 129.22299999999998],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_e54a0d4b849542efb066058e890c126f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ca05fd437d8143abb154fbf3482d7ed7.setIcon(icon_e54a0d4b849542efb066058e890c126f);
+        
+    
+        var popup_8b6518cc0e18426aa503f4492fa958b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6eb6a1c3f2ff4f10ab05b3c670d47cf8 = $(`<div id="html_6eb6a1c3f2ff4f10ab05b3c670d47cf8" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 341저3505 가격: 2230만원</pre></div>`)[0];
+            popup_8b6518cc0e18426aa503f4492fa958b1.setContent(html_6eb6a1c3f2ff4f10ab05b3c670d47cf8);
+        
+
+        marker_ca05fd437d8143abb154fbf3482d7ed7.bindPopup(popup_8b6518cc0e18426aa503f4492fa958b1)
+        ;
+
+        
+    
+    
+            marker_ca05fd437d8143abb154fbf3482d7ed7.bindTooltip(
+                `<div>
+                     위카
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63de357f019d4a89b50eb8a27ed245ce = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_d1a415eed8f4426a9d7ac790b3a365fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_63de357f019d4a89b50eb8a27ed245ce.setIcon(icon_d1a415eed8f4426a9d7ac790b3a365fa);
+        
+    
+        var popup_ddfa39f806144cc8b3802dc3890e2c30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2432185073ad478782799f924562015c = $(`<div id="html_2432185073ad478782799f924562015c" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE+</pre><pre>번호판: 251우9384 가격: 1850만원</pre></div>`)[0];
+            popup_ddfa39f806144cc8b3802dc3890e2c30.setContent(html_2432185073ad478782799f924562015c);
+        
+
+        marker_63de357f019d4a89b50eb8a27ed245ce.bindPopup(popup_ddfa39f806144cc8b3802dc3890e2c30)
+        ;
+
+        
+    
+    
+            marker_63de357f019d4a89b50eb8a27ed245ce.bindTooltip(
+                `<div>
+                     (주)으뜸자동차
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_443502b3624148c198bd9b1a7aeb00a7 = L.marker(
+                [35.98107810000001, 126.72820312505156],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_4d53b87d215543e6b5c1b5715019e5e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_443502b3624148c198bd9b1a7aeb00a7.setIcon(icon_4d53b87d215543e6b5c1b5715019e5e8);
+        
+    
+        var popup_78a46b8b9e6e4fba95d1eaa742b2e89d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4fad65afd494d0e892652d6c18f5cc5 = $(`<div id="html_a4fad65afd494d0e892652d6c18f5cc5" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 262주9083 가격: 2250만원</pre></div>`)[0];
+            popup_78a46b8b9e6e4fba95d1eaa742b2e89d.setContent(html_a4fad65afd494d0e892652d6c18f5cc5);
+        
+
+        marker_443502b3624148c198bd9b1a7aeb00a7.bindPopup(popup_78a46b8b9e6e4fba95d1eaa742b2e89d)
+        ;
+
+        
+    
+    
+            marker_443502b3624148c198bd9b1a7aeb00a7.bindTooltip(
+                `<div>
+                     건국자동차매매상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45c2e466631e426bba51bd437867c706 = L.marker(
+                [35.5826, 129.3604],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_65f2ca40fd434608bf5c7a8bd86495e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_45c2e466631e426bba51bd437867c706.setIcon(icon_65f2ca40fd434608bf5c7a8bd86495e6);
+        
+    
+        var popup_fc3a7b80d3cd4866b82a10d28ad42511 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b18201ace21482d95a1674377fe8e1f = $(`<div id="html_3b18201ace21482d95a1674377fe8e1f" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 129수5754 가격: 2680만원</pre></div>`)[0];
+            popup_fc3a7b80d3cd4866b82a10d28ad42511.setContent(html_3b18201ace21482d95a1674377fe8e1f);
+        
+
+        marker_45c2e466631e426bba51bd437867c706.bindPopup(popup_fc3a7b80d3cd4866b82a10d28ad42511)
+        ;
+
+        
+    
+    
+            marker_45c2e466631e426bba51bd437867c706.bindTooltip(
+                `<div>
+                     지오모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da7f9b5373d84390b19e7c88fccd28a7 = L.marker(
+                [37.5014422, 126.7660139],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_ef7d6d5e700e46b6afef2792f724f5d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_da7f9b5373d84390b19e7c88fccd28a7.setIcon(icon_ef7d6d5e700e46b6afef2792f724f5d7);
+        
+    
+        var popup_dadec6290cf0481fbbdd194f37f87e1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b83a29f88b24cebaef464732ba81749 = $(`<div id="html_1b83a29f88b24cebaef464732ba81749" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE+</pre><pre>번호판: 259다1680 가격: 2130만원</pre></div>`)[0];
+            popup_dadec6290cf0481fbbdd194f37f87e1b.setContent(html_1b83a29f88b24cebaef464732ba81749);
+        
+
+        marker_da7f9b5373d84390b19e7c88fccd28a7.bindPopup(popup_dadec6290cf0481fbbdd194f37f87e1b)
+        ;
+
+        
+    
+    
+            marker_da7f9b5373d84390b19e7c88fccd28a7.bindTooltip(
+                `<div>
+                     우정 모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80c8b93342544a1e9a054ceeede53aea = L.marker(
+                [37.5171, 126.8663],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_7b5c34f871004f35aee025250ee7ca02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_80c8b93342544a1e9a054ceeede53aea.setIcon(icon_7b5c34f871004f35aee025250ee7ca02);
+        
+    
+        var popup_f5d6dd5311fe4cf8aa98cdfe9f22714f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8591b3ddf2c4d51bd4fc4810b2c961b = $(`<div id="html_e8591b3ddf2c4d51bd4fc4810b2c961b" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe SE</pre><pre>번호판: 179오3075 가격: 1590만원</pre></div>`)[0];
+            popup_f5d6dd5311fe4cf8aa98cdfe9f22714f.setContent(html_e8591b3ddf2c4d51bd4fc4810b2c961b);
+        
+
+        marker_80c8b93342544a1e9a054ceeede53aea.bindPopup(popup_f5d6dd5311fe4cf8aa98cdfe9f22714f)
+        ;
+
+        
+    
+    
+            marker_80c8b93342544a1e9a054ceeede53aea.bindTooltip(
+                `<div>
+                     (주)엔터카
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fcb49a94e5c84f6293b26651377c2566 = L.marker(
+                [35.5826, 129.3604],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_f258872681914091bc3556272eb53c34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fcb49a94e5c84f6293b26651377c2566.setIcon(icon_f258872681914091bc3556272eb53c34);
+        
+    
+        var popup_9962a488aa9640d5b7473d2810c04c74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d273449873e488fbb953e7e88dca5b8 = $(`<div id="html_2d273449873e488fbb953e7e88dca5b8" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 176루2712 가격: 1960만원</pre></div>`)[0];
+            popup_9962a488aa9640d5b7473d2810c04c74.setContent(html_2d273449873e488fbb953e7e88dca5b8);
+        
+
+        marker_fcb49a94e5c84f6293b26651377c2566.bindPopup(popup_9962a488aa9640d5b7473d2810c04c74)
+        ;
+
+        
+    
+    
+            marker_fcb49a94e5c84f6293b26651377c2566.bindTooltip(
+                `<div>
+                     엠피크
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc8df50301d144ed96d33f7aec1ef919 = L.marker(
+                [35.8716, 128.5591],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_d66fbb0ba75d45dc8fc6f47cc7820abb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dc8df50301d144ed96d33f7aec1ef919.setIcon(icon_d66fbb0ba75d45dc8fc6f47cc7820abb);
+        
+    
+        var popup_1a399869a343404e8fd502a80467a926 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7377b4b3e09745f6908481cf347e230a = $(`<div id="html_7377b4b3e09745f6908481cf347e230a" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline LE</pre><pre>번호판: 100가8274 가격: 1899만원</pre></div>`)[0];
+            popup_1a399869a343404e8fd502a80467a926.setContent(html_7377b4b3e09745f6908481cf347e230a);
+        
+
+        marker_dc8df50301d144ed96d33f7aec1ef919.bindPopup(popup_1a399869a343404e8fd502a80467a926)
+        ;
+
+        
+    
+    
+            marker_dc8df50301d144ed96d33f7aec1ef919.bindTooltip(
+                `<div>
+                     우주모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09df550903d241108b56c775d7f2600a = L.marker(
+                [37.5635, 127.0365],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_c981ac65ca064d1186364d54d584255c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09df550903d241108b56c775d7f2600a.setIcon(icon_c981ac65ca064d1186364d54d584255c);
+        
+    
+        var popup_85bb6dc20b5f450da323adb1026b6e69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5bc93e5ff6a545a4bbfe1939739e7317 = $(`<div id="html_5bc93e5ff6a545a4bbfe1939739e7317" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 127루9231 가격: 2250만원</pre></div>`)[0];
+            popup_85bb6dc20b5f450da323adb1026b6e69.setContent(html_5bc93e5ff6a545a4bbfe1939739e7317);
+        
+
+        marker_09df550903d241108b56c775d7f2600a.bindPopup(popup_85bb6dc20b5f450da323adb1026b6e69)
+        ;
+
+        
+    
+    
+            marker_09df550903d241108b56c775d7f2600a.bindTooltip(
+                `<div>
+                     (주)국도상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3bf48bb211a432885830f209e0e6f41 = L.marker(
+                [35.5826, 129.3604],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_627430052cfe45c9b4715350c636529d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b3bf48bb211a432885830f209e0e6f41.setIcon(icon_627430052cfe45c9b4715350c636529d);
+        
+    
+        var popup_9936acedda6047cc9bc311a40dc01912 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_078e2ed7319e4bc5b84812d614285edc = $(`<div id="html_078e2ed7319e4bc5b84812d614285edc" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 276모7101 가격: 2290만원</pre></div>`)[0];
+            popup_9936acedda6047cc9bc311a40dc01912.setContent(html_078e2ed7319e4bc5b84812d614285edc);
+        
+
+        marker_b3bf48bb211a432885830f209e0e6f41.bindPopup(popup_9936acedda6047cc9bc311a40dc01912)
+        ;
+
+        
+    
+    
+            marker_b3bf48bb211a432885830f209e0e6f41.bindTooltip(
+                `<div>
+                     나인모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f23057c855224aec83be599da58a631e = L.marker(
+                [37.545, 126.676],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_f2fb55b022c149e0aee0277309782e71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f23057c855224aec83be599da58a631e.setIcon(icon_f2fb55b022c149e0aee0277309782e71);
+        
+    
+        var popup_0d94a8e3416449e8870e2c3f14659f7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00c2ffcf541e4995aaba498faea5b4ca = $(`<div id="html_00c2ffcf541e4995aaba498faea5b4ca" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE</pre><pre>번호판: 257고4655 가격: 2090만원</pre></div>`)[0];
+            popup_0d94a8e3416449e8870e2c3f14659f7c.setContent(html_00c2ffcf541e4995aaba498faea5b4ca);
+        
+
+        marker_f23057c855224aec83be599da58a631e.bindPopup(popup_0d94a8e3416449e8870e2c3f14659f7c)
+        ;
+
+        
+    
+    
+            marker_f23057c855224aec83be599da58a631e.bindTooltip(
+                `<div>
+                     미추홀자동차매매상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c1c9e5920984c5098bd2e1933c6ba17 = L.marker(
+                [37.5509, 126.8497],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_132c2626671a4ebdb122026ab87e5cd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0c1c9e5920984c5098bd2e1933c6ba17.setIcon(icon_132c2626671a4ebdb122026ab87e5cd1);
+        
+    
+        var popup_1a1065e91e1149bfb66fb7a5ad595a27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af6e17294ed347eb84169e80876f4c47 = $(`<div id="html_af6e17294ed347eb84169e80876f4c47" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 327우6141 가격: 2257만원</pre></div>`)[0];
+            popup_1a1065e91e1149bfb66fb7a5ad595a27.setContent(html_af6e17294ed347eb84169e80876f4c47);
+        
+
+        marker_0c1c9e5920984c5098bd2e1933c6ba17.bindPopup(popup_1a1065e91e1149bfb66fb7a5ad595a27)
+        ;
+
+        
+    
+    
+            marker_0c1c9e5920984c5098bd2e1933c6ba17.bindTooltip(
+                `<div>
+                     (주)아이오토마스터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7220b4f351cf46988c06017abbf24615 = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_38de7b8ea04640f1a6f61baff6052974 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7220b4f351cf46988c06017abbf24615.setIcon(icon_38de7b8ea04640f1a6f61baff6052974);
+        
+    
+        var popup_e1f21a1ceb4f46389f4c3a19d3f19561 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52f9c82a37a64d7983391344967e25cd = $(`<div id="html_52f9c82a37a64d7983391344967e25cd" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE+</pre><pre>번호판: 156로3623 가격: 1950만원</pre></div>`)[0];
+            popup_e1f21a1ceb4f46389f4c3a19d3f19561.setContent(html_52f9c82a37a64d7983391344967e25cd);
+        
+
+        marker_7220b4f351cf46988c06017abbf24615.bindPopup(popup_e1f21a1ceb4f46389f4c3a19d3f19561)
+        ;
+
+        
+    
+    
+            marker_7220b4f351cf46988c06017abbf24615.bindTooltip(
+                `<div>
+                     지디카
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c860684d46dc4465a0f964980f1fddb6 = L.marker(
+                [37.545, 126.676],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_16bd043546a1431a8be56323cb8c9262 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c860684d46dc4465a0f964980f1fddb6.setIcon(icon_16bd043546a1431a8be56323cb8c9262);
+        
+    
+        var popup_1e2346cdce9e4b59b36cb1e427fd18e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec2b7d1775564d448a350d8c1eec59dc = $(`<div id="html_ec2b7d1775564d448a350d8c1eec59dc" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 119모9677 가격: 2480만원</pre></div>`)[0];
+            popup_1e2346cdce9e4b59b36cb1e427fd18e5.setContent(html_ec2b7d1775564d448a350d8c1eec59dc);
+        
+
+        marker_c860684d46dc4465a0f964980f1fddb6.bindPopup(popup_1e2346cdce9e4b59b36cb1e427fd18e5)
+        ;
+
+        
+    
+    
+            marker_c860684d46dc4465a0f964980f1fddb6.bindTooltip(
+                `<div>
+                     (주)에스에이치모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91036447b224489bb0db4f5a9f7b7292 = L.marker(
+                [36.1195513, 128.3444692],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_9cc0af1630654528ba9c2b434339c310 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_91036447b224489bb0db4f5a9f7b7292.setIcon(icon_9cc0af1630654528ba9c2b434339c310);
+        
+    
+        var popup_17d51ecec70c4384bbdb507f7894731b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82c83b88ce1342c4b7238884221d0a29 = $(`<div id="html_82c83b88ce1342c4b7238884221d0a29" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 152고9564 가격: 2090만원</pre></div>`)[0];
+            popup_17d51ecec70c4384bbdb507f7894731b.setContent(html_82c83b88ce1342c4b7238884221d0a29);
+        
+
+        marker_91036447b224489bb0db4f5a9f7b7292.bindPopup(popup_17d51ecec70c4384bbdb507f7894731b)
+        ;
+
+        
+    
+    
+            marker_91036447b224489bb0db4f5a9f7b7292.bindTooltip(
+                `<div>
+                     바쿠차IBACOOCHA)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4844dce6cbc245c28dc0cbdc2fa95aef = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_4a93f7cd11cf40c6b1f29a65c7d4a20a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4844dce6cbc245c28dc0cbdc2fa95aef.setIcon(icon_4a93f7cd11cf40c6b1f29a65c7d4a20a);
+        
+    
+        var popup_27b7e4e7175242e4b5ca2d5caf93f961 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a5fc35fa49b4f5198f9544b2d2b1c75 = $(`<div id="html_1a5fc35fa49b4f5198f9544b2d2b1c75" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 315너1954 가격: 2380만원</pre></div>`)[0];
+            popup_27b7e4e7175242e4b5ca2d5caf93f961.setContent(html_1a5fc35fa49b4f5198f9544b2d2b1c75);
+        
+
+        marker_4844dce6cbc245c28dc0cbdc2fa95aef.bindPopup(popup_27b7e4e7175242e4b5ca2d5caf93f961)
+        ;
+
+        
+    
+    
+            marker_4844dce6cbc245c28dc0cbdc2fa95aef.bindTooltip(
+                `<div>
+                     코리아모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe48de61d3fa4fa5b42282544030726d = L.marker(
+                [37.3217152, 126.8308604],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_9a663cac84e94b9a89f8986ccdaf079a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fe48de61d3fa4fa5b42282544030726d.setIcon(icon_9a663cac84e94b9a89f8986ccdaf079a);
+        
+    
+        var popup_d61c9724c5b1448b89d4ba23e5041c4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a1dbc13269944fa8b53db103fd87dd3 = $(`<div id="html_6a1dbc13269944fa8b53db103fd87dd3" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 331러2787 가격: 2260만원</pre></div>`)[0];
+            popup_d61c9724c5b1448b89d4ba23e5041c4f.setContent(html_6a1dbc13269944fa8b53db103fd87dd3);
+        
+
+        marker_fe48de61d3fa4fa5b42282544030726d.bindPopup(popup_d61c9724c5b1448b89d4ba23e5041c4f)
+        ;
+
+        
+    
+    
+            marker_fe48de61d3fa4fa5b42282544030726d.bindTooltip(
+                `<div>
+                     에쓰아이모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_642bd9a5553c4d249dc85a10817e2756 = L.marker(
+                [37.6581862, 126.8319452],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_0a95e4a47f2e40ec908cb7b8d561d007 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_642bd9a5553c4d249dc85a10817e2756.setIcon(icon_0a95e4a47f2e40ec908cb7b8d561d007);
+        
+    
+        var popup_65ea19b3c18f453e9db86f17da27d051 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f3b585fd2e54b92a1281532b00e2734 = $(`<div id="html_9f3b585fd2e54b92a1281532b00e2734" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE+</pre><pre>번호판: 169루7591 가격: 1999만원</pre></div>`)[0];
+            popup_65ea19b3c18f453e9db86f17da27d051.setContent(html_9f3b585fd2e54b92a1281532b00e2734);
+        
+
+        marker_642bd9a5553c4d249dc85a10817e2756.bindPopup(popup_65ea19b3c18f453e9db86f17da27d051)
+        ;
+
+        
+    
+    
+            marker_642bd9a5553c4d249dc85a10817e2756.bindTooltip(
+                `<div>
+                     주식회사 일산오토파크
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c85735b2ac3c4ae1bdde134459b12046 = L.marker(
+                [37.5070221, 126.7220068],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_af1291ada3f441ec994444c8dbb08ca6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c85735b2ac3c4ae1bdde134459b12046.setIcon(icon_af1291ada3f441ec994444c8dbb08ca6);
+        
+    
+        var popup_e10a01662122467ab93db8896038525d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc1918be1da24d998fac43aa4a5f4c8e = $(`<div id="html_bc1918be1da24d998fac43aa4a5f4c8e" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 249라3631 가격: 1870만원</pre></div>`)[0];
+            popup_e10a01662122467ab93db8896038525d.setContent(html_bc1918be1da24d998fac43aa4a5f4c8e);
+        
+
+        marker_c85735b2ac3c4ae1bdde134459b12046.bindPopup(popup_e10a01662122467ab93db8896038525d)
+        ;
+
+        
+    
+    
+            marker_c85735b2ac3c4ae1bdde134459b12046.bindTooltip(
+                `<div>
+                     카마스터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_656b1b34713a4dcf8506e7490b6cb97a = L.marker(
+                [37.5509, 126.8497],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_2b4284b3958943e3838f8c79d54f2576 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_656b1b34713a4dcf8506e7490b6cb97a.setIcon(icon_2b4284b3958943e3838f8c79d54f2576);
+        
+    
+        var popup_18e1dbe28b4e49e1b89b5fa01e156607 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43c68a9527e249d1bf4bad11ce871aa1 = $(`<div id="html_43c68a9527e249d1bf4bad11ce871aa1" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 160무9642 가격: 2230만원</pre></div>`)[0];
+            popup_18e1dbe28b4e49e1b89b5fa01e156607.setContent(html_43c68a9527e249d1bf4bad11ce871aa1);
+        
+
+        marker_656b1b34713a4dcf8506e7490b6cb97a.bindPopup(popup_18e1dbe28b4e49e1b89b5fa01e156607)
+        ;
+
+        
+    
+    
+            marker_656b1b34713a4dcf8506e7490b6cb97a.bindTooltip(
+                `<div>
+                     (주)아이오카
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1386877aa84d445d8f20b8e56e8703a5 = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_52ce9a69870247bb8741c4d9d6c004e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1386877aa84d445d8f20b8e56e8703a5.setIcon(icon_52ce9a69870247bb8741c4d9d6c004e5);
+        
+    
+        var popup_57f79193ce584022a5851a154297cf76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31d6974e6bc249429f70a4ce2a68909c = $(`<div id="html_31d6974e6bc249429f70a4ce2a68909c" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 108오6342 가격: 2150만원</pre></div>`)[0];
+            popup_57f79193ce584022a5851a154297cf76.setContent(html_31d6974e6bc249429f70a4ce2a68909c);
+        
+
+        marker_1386877aa84d445d8f20b8e56e8703a5.bindPopup(popup_57f79193ce584022a5851a154297cf76)
+        ;
+
+        
+    
+    
+            marker_1386877aa84d445d8f20b8e56e8703a5.bindTooltip(
+                `<div>
+                     오토그린모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f42e514175e474bb1e179c99f6e723d = L.marker(
+                [37.5509, 126.8497],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_d728a2a6cc854f7eb6e14dedb3fcce8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f42e514175e474bb1e179c99f6e723d.setIcon(icon_d728a2a6cc854f7eb6e14dedb3fcce8c);
+        
+    
+        var popup_970d0a5273c04158b2caf785b538fee1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbaa41771e144210b2d9873afc05db1e = $(`<div id="html_dbaa41771e144210b2d9873afc05db1e" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 344우5340 가격: 2570만원</pre></div>`)[0];
+            popup_970d0a5273c04158b2caf785b538fee1.setContent(html_dbaa41771e144210b2d9873afc05db1e);
+        
+
+        marker_1f42e514175e474bb1e179c99f6e723d.bindPopup(popup_970d0a5273c04158b2caf785b538fee1)
+        ;
+
+        
+    
+    
+            marker_1f42e514175e474bb1e179c99f6e723d.bindTooltip(
+                `<div>
+                     주식회사대운모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8854893a97ec4b47b5f3219ad1576f5f = L.marker(
+                [35.1765, 129.0793],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_72443aa9f6724d0e82f3400dd30d91a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8854893a97ec4b47b5f3219ad1576f5f.setIcon(icon_72443aa9f6724d0e82f3400dd30d91a2);
+        
+    
+        var popup_d67e6a06a6a549f287c1360237f99113 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f28804101b8477882711f9c95293377 = $(`<div id="html_8f28804101b8477882711f9c95293377" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE</pre><pre>번호판: 206로5318 가격: 2230만원</pre></div>`)[0];
+            popup_d67e6a06a6a549f287c1360237f99113.setContent(html_8f28804101b8477882711f9c95293377);
+        
+
+        marker_8854893a97ec4b47b5f3219ad1576f5f.bindPopup(popup_d67e6a06a6a549f287c1360237f99113)
+        ;
+
+        
+    
+    
+            marker_8854893a97ec4b47b5f3219ad1576f5f.bindTooltip(
+                `<div>
+                     주식회사 스마트모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7de976a999942488beded7d681860f9 = L.marker(
+                [37.5509, 126.8497],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_17d00c78c4734e3682867d9352ec57b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c7de976a999942488beded7d681860f9.setIcon(icon_17d00c78c4734e3682867d9352ec57b8);
+        
+    
+        var popup_c66c27164ae84194b49db789552c74fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c44c410d14e541c58147a39baae89667 = $(`<div id="html_c44c410d14e541c58147a39baae89667" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 349너2792 가격: 2290만원</pre></div>`)[0];
+            popup_c66c27164ae84194b49db789552c74fb.setContent(html_c44c410d14e541c58147a39baae89667);
+        
+
+        marker_c7de976a999942488beded7d681860f9.bindPopup(popup_c66c27164ae84194b49db789552c74fb)
+        ;
+
+        
+    
+    
+            marker_c7de976a999942488beded7d681860f9.bindTooltip(
+                `<div>
+                     대디모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92b244ce5e984f948ca343d950b63cd7 = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_2de6b09a5615473e9c76781fc9ea2aab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_92b244ce5e984f948ca343d950b63cd7.setIcon(icon_2de6b09a5615473e9c76781fc9ea2aab);
+        
+    
+        var popup_9c15d3a2d08a4fe299db3a748cd67637 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16f05bad0f004960a317f36ebb537c06 = $(`<div id="html_16f05bad0f004960a317f36ebb537c06" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 385고3885 가격: 2088만원</pre></div>`)[0];
+            popup_9c15d3a2d08a4fe299db3a748cd67637.setContent(html_16f05bad0f004960a317f36ebb537c06);
+        
+
+        marker_92b244ce5e984f948ca343d950b63cd7.bindPopup(popup_9c15d3a2d08a4fe299db3a748cd67637)
+        ;
+
+        
+    
+    
+            marker_92b244ce5e984f948ca343d950b63cd7.bindTooltip(
+                `<div>
+                     제네럴모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e2bb47cd3e74a88a33d84308f9dfcc3 = L.marker(
+                [37.5509, 126.8497],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_fe71d01bfd2a499e99a0d90c660deec8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3e2bb47cd3e74a88a33d84308f9dfcc3.setIcon(icon_fe71d01bfd2a499e99a0d90c660deec8);
+        
+    
+        var popup_1f1a383e8ea444e0a6978f3ea1ec098f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e4451863c154562a06935b2f04944ee = $(`<div id="html_4e4451863c154562a06935b2f04944ee" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 316저9247 가격: 2550만원</pre></div>`)[0];
+            popup_1f1a383e8ea444e0a6978f3ea1ec098f.setContent(html_4e4451863c154562a06935b2f04944ee);
+        
+
+        marker_3e2bb47cd3e74a88a33d84308f9dfcc3.bindPopup(popup_1f1a383e8ea444e0a6978f3ea1ec098f)
+        ;
+
+        
+    
+    
+            marker_3e2bb47cd3e74a88a33d84308f9dfcc3.bindTooltip(
+                `<div>
+                     (주)아이오토스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbe3289550c643449e053dc2c97048ef = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_5993a3f7ad1c4fb2b71afb97593a19ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cbe3289550c643449e053dc2c97048ef.setIcon(icon_5993a3f7ad1c4fb2b71afb97593a19ad);
+        
+    
+        var popup_c3ad413394544cbdb68065c68d710d22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e10c95afcf604261bbf4b9b7e20b1bbf = $(`<div id="html_e10c95afcf604261bbf4b9b7e20b1bbf" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline LE</pre><pre>번호판: 385보3547 가격: 1760만원</pre></div>`)[0];
+            popup_c3ad413394544cbdb68065c68d710d22.setContent(html_e10c95afcf604261bbf4b9b7e20b1bbf);
+        
+
+        marker_cbe3289550c643449e053dc2c97048ef.bindPopup(popup_c3ad413394544cbdb68065c68d710d22)
+        ;
+
+        
+    
+    
+            marker_cbe3289550c643449e053dc2c97048ef.bindTooltip(
+                `<div>
+                     (주)리더카
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b3c4e0e799b48ff874c93fd81b90311 = L.marker(
+                [35.8716, 128.5591],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_72456be2f9ef4676a26a574a88ee9257 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b3c4e0e799b48ff874c93fd81b90311.setIcon(icon_72456be2f9ef4676a26a574a88ee9257);
+        
+    
+        var popup_1f8947434be940119ec7228afed6f531 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c899a71bda7c405485b7394391127458 = $(`<div id="html_c899a71bda7c405485b7394391127458" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 156우2229 가격: 2280만원</pre></div>`)[0];
+            popup_1f8947434be940119ec7228afed6f531.setContent(html_c899a71bda7c405485b7394391127458);
+        
+
+        marker_6b3c4e0e799b48ff874c93fd81b90311.bindPopup(popup_1f8947434be940119ec7228afed6f531)
+        ;
+
+        
+    
+    
+            marker_6b3c4e0e799b48ff874c93fd81b90311.bindTooltip(
+                `<div>
+                     다나자동차
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_146cde08e41a46fdba702abb3bb5ce69 = L.marker(
+                [34.8159, 126.4629],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_696201bc1bf440e799a3cce3e47a0c69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_146cde08e41a46fdba702abb3bb5ce69.setIcon(icon_696201bc1bf440e799a3cce3e47a0c69);
+        
+    
+        var popup_596b938c390b4f15ae47ba680ee1f1de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6129d4195799423aa813cde169feb1c9 = $(`<div id="html_6129d4195799423aa813cde169feb1c9" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 172어9787 가격: 2195만원</pre></div>`)[0];
+            popup_596b938c390b4f15ae47ba680ee1f1de.setContent(html_6129d4195799423aa813cde169feb1c9);
+        
+
+        marker_146cde08e41a46fdba702abb3bb5ce69.bindPopup(popup_596b938c390b4f15ae47ba680ee1f1de)
+        ;
+
+        
+    
+    
+            marker_146cde08e41a46fdba702abb3bb5ce69.bindTooltip(
+                `<div>
+                     현대매매상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49ae35839ed14f17aa1c3e79c2d835ac = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_4ff489840ca34478869d092ca4e41056 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_49ae35839ed14f17aa1c3e79c2d835ac.setIcon(icon_4ff489840ca34478869d092ca4e41056);
+        
+    
+        var popup_ff5c746ef305417eb0c683545ba0431e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e45af4a260014a7a89bdebd4005b73f5 = $(`<div id="html_e45af4a260014a7a89bdebd4005b73f5" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE</pre><pre>번호판: 130구9655 가격: 2140만원</pre></div>`)[0];
+            popup_ff5c746ef305417eb0c683545ba0431e.setContent(html_e45af4a260014a7a89bdebd4005b73f5);
+        
+
+        marker_49ae35839ed14f17aa1c3e79c2d835ac.bindPopup(popup_ff5c746ef305417eb0c683545ba0431e)
+        ;
+
+        
+    
+    
+            marker_49ae35839ed14f17aa1c3e79c2d835ac.bindTooltip(
+                `<div>
+                     블루오토
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9129ce91ceb4e379226636f9b38349f = L.marker(
+                [37.5509, 126.8497],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_f6b98a004dc9457eae95f411e81c8564 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b9129ce91ceb4e379226636f9b38349f.setIcon(icon_f6b98a004dc9457eae95f411e81c8564);
+        
+    
+        var popup_9cc2399d059c44378b16f88152930f99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58de317cbb0442cf86dbe45d3e7c9abe = $(`<div id="html_58de317cbb0442cf86dbe45d3e7c9abe" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 135버9463 가격: 1990만원</pre></div>`)[0];
+            popup_9cc2399d059c44378b16f88152930f99.setContent(html_58de317cbb0442cf86dbe45d3e7c9abe);
+        
+
+        marker_b9129ce91ceb4e379226636f9b38349f.bindPopup(popup_9cc2399d059c44378b16f88152930f99)
+        ;
+
+        
+    
+    
+            marker_b9129ce91ceb4e379226636f9b38349f.bindTooltip(
+                `<div>
+                     주)이아이모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c94af733ee744f0a541908a749b8e63 = L.marker(
+                [35.5826, 129.3604],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_1156eb68a43240d2b01125fce2efa18f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3c94af733ee744f0a541908a749b8e63.setIcon(icon_1156eb68a43240d2b01125fce2efa18f);
+        
+    
+        var popup_378da873151e44339b331c09875eacf5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68170865773046088592e930383f7ce5 = $(`<div id="html_68170865773046088592e930383f7ce5" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE</pre><pre>번호판: 228고2239 가격: 2180만원</pre></div>`)[0];
+            popup_378da873151e44339b331c09875eacf5.setContent(html_68170865773046088592e930383f7ce5);
+        
+
+        marker_3c94af733ee744f0a541908a749b8e63.bindPopup(popup_378da873151e44339b331c09875eacf5)
+        ;
+
+        
+    
+    
+            marker_3c94af733ee744f0a541908a749b8e63.bindTooltip(
+                `<div>
+                     뉴에덴상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe70971c228d4279811f70bf41b9f923 = L.marker(
+                [37.5509, 126.8497],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_dbd0f2b0d0694f489607677ec8d12d69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fe70971c228d4279811f70bf41b9f923.setIcon(icon_dbd0f2b0d0694f489607677ec8d12d69);
+        
+    
+        var popup_3042a0e1a3c9429b8bf0059f82b9a6e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad1b9f7228c4454182190f411a4ba562 = $(`<div id="html_ad1b9f7228c4454182190f411a4ba562" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 244두5476 가격: 2100만원</pre></div>`)[0];
+            popup_3042a0e1a3c9429b8bf0059f82b9a6e8.setContent(html_ad1b9f7228c4454182190f411a4ba562);
+        
+
+        marker_fe70971c228d4279811f70bf41b9f923.bindPopup(popup_3042a0e1a3c9429b8bf0059f82b9a6e8)
+        ;
+
+        
+    
+    
+            marker_fe70971c228d4279811f70bf41b9f923.bindTooltip(
+                `<div>
+                     주식회사 몰타
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7f85fe99f7640259022039b9111a9bf = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_5bab0c9ed2474bc09c0d734b76e735b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7f85fe99f7640259022039b9111a9bf.setIcon(icon_5bab0c9ed2474bc09c0d734b76e735b0);
+        
+    
+        var popup_a9aec93e62504065bc2ffe934df1aa21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_160669dbdd3a4d45b03b93b383dc37de = $(`<div id="html_160669dbdd3a4d45b03b93b383dc37de" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 162다8382 가격: 2399만원</pre></div>`)[0];
+            popup_a9aec93e62504065bc2ffe934df1aa21.setContent(html_160669dbdd3a4d45b03b93b383dc37de);
+        
+
+        marker_a7f85fe99f7640259022039b9111a9bf.bindPopup(popup_a9aec93e62504065bc2ffe934df1aa21)
+        ;
+
+        
+    
+    
+            marker_a7f85fe99f7640259022039b9111a9bf.bindTooltip(
+                `<div>
+                     제일모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29f3de9eada0406ea7525e6b1872faef = L.marker(
+                [35.24835020000001, 128.67521344186662],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_fd1355157e9b4d20872d9cfc9d20f8fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_29f3de9eada0406ea7525e6b1872faef.setIcon(icon_fd1355157e9b4d20872d9cfc9d20f8fa);
+        
+    
+        var popup_3bb0501c086642aaa6b437a361dad682 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da395b9aa62048e5877082adf606fa45 = $(`<div id="html_da395b9aa62048e5877082adf606fa45" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 105주9963 가격: 2230만원</pre></div>`)[0];
+            popup_3bb0501c086642aaa6b437a361dad682.setContent(html_da395b9aa62048e5877082adf606fa45);
+        
+
+        marker_29f3de9eada0406ea7525e6b1872faef.bindPopup(popup_3bb0501c086642aaa6b437a361dad682)
+        ;
+
+        
+    
+    
+            marker_29f3de9eada0406ea7525e6b1872faef.bindTooltip(
+                `<div>
+                     대웅 모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7743f3aee92f428da88710338d19c106 = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_1675be228a324a27b04c3f586e59310d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7743f3aee92f428da88710338d19c106.setIcon(icon_1675be228a324a27b04c3f586e59310d);
+        
+    
+        var popup_caaabe408b9946c2921b482fd644e0b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77632197ba724cb99adc9cd928ef747e = $(`<div id="html_77632197ba724cb99adc9cd928ef747e" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE</pre><pre>번호판: 194소2537 가격: 2070만원</pre></div>`)[0];
+            popup_caaabe408b9946c2921b482fd644e0b6.setContent(html_77632197ba724cb99adc9cd928ef747e);
+        
+
+        marker_7743f3aee92f428da88710338d19c106.bindPopup(popup_caaabe408b9946c2921b482fd644e0b6)
+        ;
+
+        
+    
+    
+            marker_7743f3aee92f428da88710338d19c106.bindTooltip(
+                `<div>
+                     (주)으뜸자동차
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a32a2e80999348b4914bc0fe96244157 = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_859d1a285f884e8da808fdb138e275d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a32a2e80999348b4914bc0fe96244157.setIcon(icon_859d1a285f884e8da808fdb138e275d4);
+        
+    
+        var popup_8c59fc4b16454cfda82ce7ca7c0c95ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7b2da09c2b54c7f8f4dd74260c9bbed = $(`<div id="html_d7b2da09c2b54c7f8f4dd74260c9bbed" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE</pre><pre>번호판: 271모3019 가격: 1950만원</pre></div>`)[0];
+            popup_8c59fc4b16454cfda82ce7ca7c0c95ea.setContent(html_d7b2da09c2b54c7f8f4dd74260c9bbed);
+        
+
+        marker_a32a2e80999348b4914bc0fe96244157.bindPopup(popup_8c59fc4b16454cfda82ce7ca7c0c95ea)
+        ;
+
+        
+    
+    
+            marker_a32a2e80999348b4914bc0fe96244157.bindTooltip(
+                `<div>
+                     (주)유니앤모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bcdbe6b9423c4d5aaa23fb302cbaf5f2 = L.marker(
+                [35.5826, 129.3604],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_976ac363a4d04345b59fa74f3fe8cef6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bcdbe6b9423c4d5aaa23fb302cbaf5f2.setIcon(icon_976ac363a4d04345b59fa74f3fe8cef6);
+        
+    
+        var popup_f410bc5996db41d69c61567b842a668f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95f64674bdc64834a200efeb0c5e2251 = $(`<div id="html_95f64674bdc64834a200efeb0c5e2251" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE</pre><pre>번호판: 308저8425 가격: 2090만원</pre></div>`)[0];
+            popup_f410bc5996db41d69c61567b842a668f.setContent(html_95f64674bdc64834a200efeb0c5e2251);
+        
+
+        marker_bcdbe6b9423c4d5aaa23fb302cbaf5f2.bindPopup(popup_f410bc5996db41d69c61567b842a668f)
+        ;
+
+        
+    
+    
+            marker_bcdbe6b9423c4d5aaa23fb302cbaf5f2.bindTooltip(
+                `<div>
+                     넘버원모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f04a9bb32d8b490391c75b34e102e718 = L.marker(
+                [37.3217152, 126.8308604],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_0c21195dc5a54b08bfdf7f341c4f557e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f04a9bb32d8b490391c75b34e102e718.setIcon(icon_0c21195dc5a54b08bfdf7f341c4f557e);
+        
+    
+        var popup_d537f8d8ef7f4558b27bef7ee4ee3e28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d31d937a28574643b32742f71931b979 = $(`<div id="html_d31d937a28574643b32742f71931b979" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 192라1471 가격: 2450만원</pre></div>`)[0];
+            popup_d537f8d8ef7f4558b27bef7ee4ee3e28.setContent(html_d31d937a28574643b32742f71931b979);
+        
+
+        marker_f04a9bb32d8b490391c75b34e102e718.bindPopup(popup_d537f8d8ef7f4558b27bef7ee4ee3e28)
+        ;
+
+        
+    
+    
+            marker_f04a9bb32d8b490391c75b34e102e718.bindTooltip(
+                `<div>
+                     OK자동차매매상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5704b3f4f5c4c5f9dbd6e26e485e970 = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_5458053ea407463a84a8efe89202ba4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d5704b3f4f5c4c5f9dbd6e26e485e970.setIcon(icon_5458053ea407463a84a8efe89202ba4c);
+        
+    
+        var popup_db98f14fe03e486aba7080d4832ab93b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33e7004e0b4c4f068369620ab40f96aa = $(`<div id="html_33e7004e0b4c4f068369620ab40f96aa" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 394가1696 가격: 2349만원</pre></div>`)[0];
+            popup_db98f14fe03e486aba7080d4832ab93b.setContent(html_33e7004e0b4c4f068369620ab40f96aa);
+        
+
+        marker_d5704b3f4f5c4c5f9dbd6e26e485e970.bindPopup(popup_db98f14fe03e486aba7080d4832ab93b)
+        ;
+
+        
+    
+    
+            marker_d5704b3f4f5c4c5f9dbd6e26e485e970.bindTooltip(
+                `<div>
+                     (주)왕카
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5f3588ba81d46adb604c7212efc9f34 = L.marker(
+                [37.4636, 126.6502],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_d8cb54ee78594bd9915f071611dff6e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a5f3588ba81d46adb604c7212efc9f34.setIcon(icon_d8cb54ee78594bd9915f071611dff6e9);
+        
+    
+        var popup_21ae7532593545848febe3e78619bbc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45bdeb6c2fb94854821fb57e205bfe59 = $(`<div id="html_45bdeb6c2fb94854821fb57e205bfe59" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 293서7465 가격: 1730만원</pre></div>`)[0];
+            popup_21ae7532593545848febe3e78619bbc8.setContent(html_45bdeb6c2fb94854821fb57e205bfe59);
+        
+
+        marker_a5f3588ba81d46adb604c7212efc9f34.bindPopup(popup_21ae7532593545848febe3e78619bbc8)
+        ;
+
+        
+    
+    
+            marker_a5f3588ba81d46adb604c7212efc9f34.bindTooltip(
+                `<div>
+                     유안모터스자동차매매상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30c6a56ddc164687874b694ea54d241a = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_8e3d6384d03944eda52aceeeb80d1d61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_30c6a56ddc164687874b694ea54d241a.setIcon(icon_8e3d6384d03944eda52aceeeb80d1d61);
+        
+    
+        var popup_659a5d4966ea41e6ae0800fb56045c55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7799d3fcfe6144f9a9c3affa345358ab = $(`<div id="html_7799d3fcfe6144f9a9c3affa345358ab" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 265가8108 가격: 2080만원</pre></div>`)[0];
+            popup_659a5d4966ea41e6ae0800fb56045c55.setContent(html_7799d3fcfe6144f9a9c3affa345358ab);
+        
+
+        marker_30c6a56ddc164687874b694ea54d241a.bindPopup(popup_659a5d4966ea41e6ae0800fb56045c55)
+        ;
+
+        
+    
+    
+            marker_30c6a56ddc164687874b694ea54d241a.bindTooltip(
+                `<div>
+                     비마이카주식회사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9d79129c90d4065a9c1041c16b16b6d = L.marker(
+                [35.1765, 129.0793],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_2f8e946334d344e6a3861aaeb03edd8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a9d79129c90d4065a9c1041c16b16b6d.setIcon(icon_2f8e946334d344e6a3861aaeb03edd8c);
+        
+    
+        var popup_a215de155b944d60977d5b718c4445ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f50135d83e74f70990efd141167d3c7 = $(`<div id="html_2f50135d83e74f70990efd141167d3c7" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 264루7458 가격: 2190만원</pre></div>`)[0];
+            popup_a215de155b944d60977d5b718c4445ab.setContent(html_2f50135d83e74f70990efd141167d3c7);
+        
+
+        marker_a9d79129c90d4065a9c1041c16b16b6d.bindPopup(popup_a215de155b944d60977d5b718c4445ab)
+        ;
+
+        
+    
+    
+            marker_a9d79129c90d4065a9c1041c16b16b6d.bindTooltip(
+                `<div>
+                     주식회사 다온모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_548df0377ee4401f918b8d9ff9816520 = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_604895324b6947f5bc20f1648a0b5e36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_548df0377ee4401f918b8d9ff9816520.setIcon(icon_604895324b6947f5bc20f1648a0b5e36);
+        
+    
+        var popup_92fb4685baaf4705a64d806bcae8a098 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6f6ef0f0f6d4b90a69e02771ae4a129 = $(`<div id="html_e6f6ef0f0f6d4b90a69e02771ae4a129" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE</pre><pre>번호판: 326노5939 가격: 2230만원</pre></div>`)[0];
+            popup_92fb4685baaf4705a64d806bcae8a098.setContent(html_e6f6ef0f0f6d4b90a69e02771ae4a129);
+        
+
+        marker_548df0377ee4401f918b8d9ff9816520.bindPopup(popup_92fb4685baaf4705a64d806bcae8a098)
+        ;
+
+        
+    
+    
+            marker_548df0377ee4401f918b8d9ff9816520.bindTooltip(
+                `<div>
+                     탑라인모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1718a45a737f40fbb9b2edce35d04b62 = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_05f673ef8a854b9684ea81a36b2f4cb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1718a45a737f40fbb9b2edce35d04b62.setIcon(icon_05f673ef8a854b9684ea81a36b2f4cb8);
+        
+    
+        var popup_daae912f2e3a4e978e6462b53ca6d236 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7a1cde1d104405a8f4cd36a7002085e = $(`<div id="html_c7a1cde1d104405a8f4cd36a7002085e" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE</pre><pre>번호판: 124루9211 가격: 2050만원</pre></div>`)[0];
+            popup_daae912f2e3a4e978e6462b53ca6d236.setContent(html_c7a1cde1d104405a8f4cd36a7002085e);
+        
+
+        marker_1718a45a737f40fbb9b2edce35d04b62.bindPopup(popup_daae912f2e3a4e978e6462b53ca6d236)
+        ;
+
+        
+    
+    
+            marker_1718a45a737f40fbb9b2edce35d04b62.bindTooltip(
+                `<div>
+                     (주)우리들모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e93e0816d6643b1855cc07d62642ae4 = L.marker(
+                [35.1361, 129.0843999],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_a592ef676e03453d8c01ff90fc789528 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4e93e0816d6643b1855cc07d62642ae4.setIcon(icon_a592ef676e03453d8c01ff90fc789528);
+        
+    
+        var popup_13103a0cf09a457098a1f2276af6fba1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b5ed52039c64544afd191e90c0de178 = $(`<div id="html_0b5ed52039c64544afd191e90c0de178" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 139소1825 가격: 2680만원</pre></div>`)[0];
+            popup_13103a0cf09a457098a1f2276af6fba1.setContent(html_0b5ed52039c64544afd191e90c0de178);
+        
+
+        marker_4e93e0816d6643b1855cc07d62642ae4.bindPopup(popup_13103a0cf09a457098a1f2276af6fba1)
+        ;
+
+        
+    
+    
+            marker_4e93e0816d6643b1855cc07d62642ae4.bindTooltip(
+                `<div>
+                     동원모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f614231c06847dda8c2d16d46ab94df = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_5475e569d2dd44fbabeff0d430b6ac86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f614231c06847dda8c2d16d46ab94df.setIcon(icon_5475e569d2dd44fbabeff0d430b6ac86);
+        
+    
+        var popup_23cb9fd584b84355a72f550a07743ca4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d56b7e7adeb40f5bb1a6d9eeaa56783 = $(`<div id="html_7d56b7e7adeb40f5bb1a6d9eeaa56783" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 113조5353 가격: 2230만원</pre></div>`)[0];
+            popup_23cb9fd584b84355a72f550a07743ca4.setContent(html_7d56b7e7adeb40f5bb1a6d9eeaa56783);
+        
+
+        marker_3f614231c06847dda8c2d16d46ab94df.bindPopup(popup_23cb9fd584b84355a72f550a07743ca4)
+        ;
+
+        
+    
+    
+            marker_3f614231c06847dda8c2d16d46ab94df.bindTooltip(
+                `<div>
+                     명문자동차
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa843c29d1e44f07afa9477b6a90d5e2 = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_9306504b18d74be297a6e8d7d75b6f50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aa843c29d1e44f07afa9477b6a90d5e2.setIcon(icon_9306504b18d74be297a6e8d7d75b6f50);
+        
+    
+        var popup_56902dce7188468ea3a2de6b34b4acef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0851b58bb0f94d4d8aa8d1e9daeff234 = $(`<div id="html_0851b58bb0f94d4d8aa8d1e9daeff234" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE</pre><pre>번호판: 163보6079 가격: 2220만원</pre></div>`)[0];
+            popup_56902dce7188468ea3a2de6b34b4acef.setContent(html_0851b58bb0f94d4d8aa8d1e9daeff234);
+        
+
+        marker_aa843c29d1e44f07afa9477b6a90d5e2.bindPopup(popup_56902dce7188468ea3a2de6b34b4acef)
+        ;
+
+        
+    
+    
+            marker_aa843c29d1e44f07afa9477b6a90d5e2.bindTooltip(
+                `<div>
+                     라온모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93d30e0fbec94979a7718421327d8397 = L.marker(
+                [37.615461, 126.71578909999998],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_009ab0115ce04ffe88a7986c883da15c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_93d30e0fbec94979a7718421327d8397.setIcon(icon_009ab0115ce04ffe88a7986c883da15c);
+        
+    
+        var popup_ecaf3c2203bd43a3b9f7b7c3e4ef31d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7040a7221c6e49c1a1baceee7aa85bbf = $(`<div id="html_7040a7221c6e49c1a1baceee7aa85bbf" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline LE</pre><pre>번호판: 350무8617 가격: 2130만원</pre></div>`)[0];
+            popup_ecaf3c2203bd43a3b9f7b7c3e4ef31d3.setContent(html_7040a7221c6e49c1a1baceee7aa85bbf);
+        
+
+        marker_93d30e0fbec94979a7718421327d8397.bindPopup(popup_ecaf3c2203bd43a3b9f7b7c3e4ef31d3)
+        ;
+
+        
+    
+    
+            marker_93d30e0fbec94979a7718421327d8397.bindTooltip(
+                `<div>
+                     차톡
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9df07e5251bf47cd9486eec1e4ae2a93 = L.marker(
+                [37.7849312, 127.0457771],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_f891bfcc7bf647ee991fdfdf9e88c997 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9df07e5251bf47cd9486eec1e4ae2a93.setIcon(icon_f891bfcc7bf647ee991fdfdf9e88c997);
+        
+    
+        var popup_789cd845e4dc49418f9c9399025cbcd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b905acb054c34deba3f3b772d0a1cfd3 = $(`<div id="html_b905acb054c34deba3f3b772d0a1cfd3" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 373고8751 가격: 2290만원</pre></div>`)[0];
+            popup_789cd845e4dc49418f9c9399025cbcd9.setContent(html_b905acb054c34deba3f3b772d0a1cfd3);
+        
+
+        marker_9df07e5251bf47cd9486eec1e4ae2a93.bindPopup(popup_789cd845e4dc49418f9c9399025cbcd9)
+        ;
+
+        
+    
+    
+            marker_9df07e5251bf47cd9486eec1e4ae2a93.bindTooltip(
+                `<div>
+                     삼우상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccffa139c0c244399fb9c28d4ee14f7a = L.marker(
+                [37.5509, 126.8497],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_d90b2b69f64a46f8bc043f48ebd3b9ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ccffa139c0c244399fb9c28d4ee14f7a.setIcon(icon_d90b2b69f64a46f8bc043f48ebd3b9ad);
+        
+    
+        var popup_0d5b541c2f7f435787b38693062215ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a749701a82564630ba651fd73c4ba1b3 = $(`<div id="html_a749701a82564630ba651fd73c4ba1b3" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 264우6105 가격: 2330만원</pre></div>`)[0];
+            popup_0d5b541c2f7f435787b38693062215ae.setContent(html_a749701a82564630ba651fd73c4ba1b3);
+        
+
+        marker_ccffa139c0c244399fb9c28d4ee14f7a.bindPopup(popup_0d5b541c2f7f435787b38693062215ae)
+        ;
+
+        
+    
+    
+            marker_ccffa139c0c244399fb9c28d4ee14f7a.bindTooltip(
+                `<div>
+                     주식회사 유씨에스오토
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c610eb40e534f1d8569e988cc7296f0 = L.marker(
+                [37.2405741, 127.1785572],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_27c7aea067184027bd9fcb94f3461ade = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9c610eb40e534f1d8569e988cc7296f0.setIcon(icon_27c7aea067184027bd9fcb94f3461ade);
+        
+    
+        var popup_409ceda105504a13adb2f768930dc061 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8da6479f16ec4b2695b5424e7612f0af = $(`<div id="html_8da6479f16ec4b2695b5424e7612f0af" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE</pre><pre>번호판: 287어8753 가격: 2100만원</pre></div>`)[0];
+            popup_409ceda105504a13adb2f768930dc061.setContent(html_8da6479f16ec4b2695b5424e7612f0af);
+        
+
+        marker_9c610eb40e534f1d8569e988cc7296f0.bindPopup(popup_409ceda105504a13adb2f768930dc061)
+        ;
+
+        
+    
+    
+            marker_9c610eb40e534f1d8569e988cc7296f0.bindTooltip(
+                `<div>
+                     오토피아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51603e4866984d7ea0acf81c7b394542 = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_3c35c2416a6f4fbeb34e146c73174e76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_51603e4866984d7ea0acf81c7b394542.setIcon(icon_3c35c2416a6f4fbeb34e146c73174e76);
+        
+    
+        var popup_d574877ae5c7475e95c1bcfa6586e428 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5859683f142b425482f0b4fca8f4dd19 = $(`<div id="html_5859683f142b425482f0b4fca8f4dd19" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 286더2315 가격: 2300만원</pre></div>`)[0];
+            popup_d574877ae5c7475e95c1bcfa6586e428.setContent(html_5859683f142b425482f0b4fca8f4dd19);
+        
+
+        marker_51603e4866984d7ea0acf81c7b394542.bindPopup(popup_d574877ae5c7475e95c1bcfa6586e428)
+        ;
+
+        
+    
+    
+            marker_51603e4866984d7ea0acf81c7b394542.bindTooltip(
+                `<div>
+                     명문자동차
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3bdc3a9f992b4f7288882cb4a4255bbe = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_e9ff52f8242640bb9fe0417577023d38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3bdc3a9f992b4f7288882cb4a4255bbe.setIcon(icon_e9ff52f8242640bb9fe0417577023d38);
+        
+    
+        var popup_4e45b2f044eb4516a71a5d20aaca1e29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2d20712907749f682ed645541d4d8be = $(`<div id="html_f2d20712907749f682ed645541d4d8be" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 346다4993 가격: 2170만원</pre></div>`)[0];
+            popup_4e45b2f044eb4516a71a5d20aaca1e29.setContent(html_f2d20712907749f682ed645541d4d8be);
+        
+
+        marker_3bdc3a9f992b4f7288882cb4a4255bbe.bindPopup(popup_4e45b2f044eb4516a71a5d20aaca1e29)
+        ;
+
+        
+    
+    
+            marker_3bdc3a9f992b4f7288882cb4a4255bbe.bindTooltip(
+                `<div>
+                     청운자동차매매상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e68acb702866444292f9144d4b299e71 = L.marker(
+                [35.1361, 129.0843999],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_2d6ef447f6a0456390c80ae7596c88f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e68acb702866444292f9144d4b299e71.setIcon(icon_2d6ef447f6a0456390c80ae7596c88f8);
+        
+    
+        var popup_3ad3bf9c3fc2466ba911968e282e5a79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c3e8a65551b4069b71337a56f32d1fa = $(`<div id="html_4c3e8a65551b4069b71337a56f32d1fa" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE+</pre><pre>번호판: 242마5776 가격: 2020만원</pre></div>`)[0];
+            popup_3ad3bf9c3fc2466ba911968e282e5a79.setContent(html_4c3e8a65551b4069b71337a56f32d1fa);
+        
+
+        marker_e68acb702866444292f9144d4b299e71.bindPopup(popup_3ad3bf9c3fc2466ba911968e282e5a79)
+        ;
+
+        
+    
+    
+            marker_e68acb702866444292f9144d4b299e71.bindTooltip(
+                `<div>
+                     정우자동차상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d309451c52f045a694a0d5b8960fd1e1 = L.marker(
+                [36.9924966, 127.1127168],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_5d680fea7f8742dbab18b055810824ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d309451c52f045a694a0d5b8960fd1e1.setIcon(icon_5d680fea7f8742dbab18b055810824ed);
+        
+    
+        var popup_5b778226bfdf4b579b7baaf7b3c0db9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5587f2d6a2ae46378e05438837f8a411 = $(`<div id="html_5587f2d6a2ae46378e05438837f8a411" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline LE</pre><pre>번호판: 126우7016 가격: 1690만원</pre></div>`)[0];
+            popup_5b778226bfdf4b579b7baaf7b3c0db9c.setContent(html_5587f2d6a2ae46378e05438837f8a411);
+        
+
+        marker_d309451c52f045a694a0d5b8960fd1e1.bindPopup(popup_5b778226bfdf4b579b7baaf7b3c0db9c)
+        ;
+
+        
+    
+    
+            marker_d309451c52f045a694a0d5b8960fd1e1.bindTooltip(
+                `<div>
+                     베스트자동차매매상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_890c90dc877446c6919ec6ca4a2a846d = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_f1be9ef284744276bafd9b956cf844fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_890c90dc877446c6919ec6ca4a2a846d.setIcon(icon_f1be9ef284744276bafd9b956cf844fc);
+        
+    
+        var popup_a8a9e7af58884da3a79d6acc03804676 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_042040f60fd74cfc9c19f713e4857ad8 = $(`<div id="html_042040f60fd74cfc9c19f713e4857ad8" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 340보1141 가격: 2399만원</pre></div>`)[0];
+            popup_a8a9e7af58884da3a79d6acc03804676.setContent(html_042040f60fd74cfc9c19f713e4857ad8);
+        
+
+        marker_890c90dc877446c6919ec6ca4a2a846d.bindPopup(popup_a8a9e7af58884da3a79d6acc03804676)
+        ;
+
+        
+    
+    
+            marker_890c90dc877446c6919ec6ca4a2a846d.bindTooltip(
+                `<div>
+                     카포인트
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9de11cbda0a942078aa08400a63bce95 = L.marker(
+                [37.7381078, 127.033929],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_0fee15a53dbb4ab1947c060626de2648 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9de11cbda0a942078aa08400a63bce95.setIcon(icon_0fee15a53dbb4ab1947c060626de2648);
+        
+    
+        var popup_c9a77eec4e594f6ba401c030edd2a32f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2327bf160244e228a224e76e4387ebd = $(`<div id="html_d2327bf160244e228a224e76e4387ebd" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 124버3806 가격: 2250만원</pre></div>`)[0];
+            popup_c9a77eec4e594f6ba401c030edd2a32f.setContent(html_d2327bf160244e228a224e76e4387ebd);
+        
+
+        marker_9de11cbda0a942078aa08400a63bce95.bindPopup(popup_c9a77eec4e594f6ba401c030edd2a32f)
+        ;
+
+        
+    
+    
+            marker_9de11cbda0a942078aa08400a63bce95.bindTooltip(
+                `<div>
+                     의정부인정모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba59d545065e491488e098477f1cab0f = L.marker(
+                [35.152140100000004, 126.8900561],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_9442827142a744dbb182a7b714c6d331 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ba59d545065e491488e098477f1cab0f.setIcon(icon_9442827142a744dbb182a7b714c6d331);
+        
+    
+        var popup_073759a148174df98a025b37590b5d0d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4503e23ec8ec434c9b845151ca0467d1 = $(`<div id="html_4503e23ec8ec434c9b845151ca0467d1" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 179누6035 가격: 2300만원</pre></div>`)[0];
+            popup_073759a148174df98a025b37590b5d0d.setContent(html_4503e23ec8ec434c9b845151ca0467d1);
+        
+
+        marker_ba59d545065e491488e098477f1cab0f.bindPopup(popup_073759a148174df98a025b37590b5d0d)
+        ;
+
+        
+    
+    
+            marker_ba59d545065e491488e098477f1cab0f.bindTooltip(
+                `<div>
+                     (주)케이원모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e041f2bdb72c4ad0bffa85f2fcff8bf4 = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_64f957168292410db29e27a28e06db05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e041f2bdb72c4ad0bffa85f2fcff8bf4.setIcon(icon_64f957168292410db29e27a28e06db05);
+        
+    
+        var popup_824f735e76bd476fade98888971157c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aeb0b0d33aa440d7ba73b9cabb5fa2d0 = $(`<div id="html_aeb0b0d33aa440d7ba73b9cabb5fa2d0" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE+</pre><pre>번호판: 291너3528 가격: 1940만원</pre></div>`)[0];
+            popup_824f735e76bd476fade98888971157c7.setContent(html_aeb0b0d33aa440d7ba73b9cabb5fa2d0);
+        
+
+        marker_e041f2bdb72c4ad0bffa85f2fcff8bf4.bindPopup(popup_824f735e76bd476fade98888971157c7)
+        ;
+
+        
+    
+    
+            marker_e041f2bdb72c4ad0bffa85f2fcff8bf4.bindTooltip(
+                `<div>
+                     카스토어
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7fce4001b9d846f3b945c8a091ca6217 = L.marker(
+                [37.3217152, 126.8308604],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_90f0458a7f5d41f5bb096c260aaca880 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7fce4001b9d846f3b945c8a091ca6217.setIcon(icon_90f0458a7f5d41f5bb096c260aaca880);
+        
+    
+        var popup_4c6c58c56cac40c99c9079497921c738 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_454bba25eb284dbbb3099618a56e4472 = $(`<div id="html_454bba25eb284dbbb3099618a56e4472" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 374로4220 가격: 2250만원</pre></div>`)[0];
+            popup_4c6c58c56cac40c99c9079497921c738.setContent(html_454bba25eb284dbbb3099618a56e4472);
+        
+
+        marker_7fce4001b9d846f3b945c8a091ca6217.bindPopup(popup_4c6c58c56cac40c99c9079497921c738)
+        ;
+
+        
+    
+    
+            marker_7fce4001b9d846f3b945c8a091ca6217.bindTooltip(
+                `<div>
+                     이든자동차
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f3a9a13c0d84bf99d30587f5ee5e28a = L.marker(
+                [37.3217152, 126.8308604],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_02733b19e4894398a595d0067dfcaaea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4f3a9a13c0d84bf99d30587f5ee5e28a.setIcon(icon_02733b19e4894398a595d0067dfcaaea);
+        
+    
+        var popup_ef3e7cd761f04d4ea502fdd2410232fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f3f2d1c99af4545ad15e552f561f711 = $(`<div id="html_3f3f2d1c99af4545ad15e552f561f711" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 128가6680 가격: 2150만원</pre></div>`)[0];
+            popup_ef3e7cd761f04d4ea502fdd2410232fc.setContent(html_3f3f2d1c99af4545ad15e552f561f711);
+        
+
+        marker_4f3a9a13c0d84bf99d30587f5ee5e28a.bindPopup(popup_ef3e7cd761f04d4ea502fdd2410232fc)
+        ;
+
+        
+    
+    
+            marker_4f3a9a13c0d84bf99d30587f5ee5e28a.bindTooltip(
+                `<div>
+                     한국자동차매매상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c78dd739cc3b4752a0bfe6b493f0f81a = L.marker(
+                [35.1521, 128.9911],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_435c7b8a0f98485ab17e8e59ceb4c2b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c78dd739cc3b4752a0bfe6b493f0f81a.setIcon(icon_435c7b8a0f98485ab17e8e59ceb4c2b9);
+        
+    
+        var popup_0d651edfc1754af99b59233a6bb465d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53cae57e059e4ff59780ab747a110975 = $(`<div id="html_53cae57e059e4ff59780ab747a110975" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 131두2350 가격: 2790만원</pre></div>`)[0];
+            popup_0d651edfc1754af99b59233a6bb465d8.setContent(html_53cae57e059e4ff59780ab747a110975);
+        
+
+        marker_c78dd739cc3b4752a0bfe6b493f0f81a.bindPopup(popup_0d651edfc1754af99b59233a6bb465d8)
+        ;
+
+        
+    
+    
+            marker_c78dd739cc3b4752a0bfe6b493f0f81a.bindTooltip(
+                `<div>
+                     미소중고차
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_843b9e5023174ee69d6fdab8c33c73c6 = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_7887122ffe6047688732a64a25fa7182 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_843b9e5023174ee69d6fdab8c33c73c6.setIcon(icon_7887122ffe6047688732a64a25fa7182);
+        
+    
+        var popup_4101e301a53f41c19e5bf39604b5d07c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6879b73cd9f14e539b232753eeb6d03d = $(`<div id="html_6879b73cd9f14e539b232753eeb6d03d" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE</pre><pre>번호판: 154더9881 가격: 2050만원</pre></div>`)[0];
+            popup_4101e301a53f41c19e5bf39604b5d07c.setContent(html_6879b73cd9f14e539b232753eeb6d03d);
+        
+
+        marker_843b9e5023174ee69d6fdab8c33c73c6.bindPopup(popup_4101e301a53f41c19e5bf39604b5d07c)
+        ;
+
+        
+    
+    
+            marker_843b9e5023174ee69d6fdab8c33c73c6.bindTooltip(
+                `<div>
+                     (주)유니앤모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_406efe1b689b40719ce39603501c75aa = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_26803a3f91f64aa5b75e5a5c984c79c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_406efe1b689b40719ce39603501c75aa.setIcon(icon_26803a3f91f64aa5b75e5a5c984c79c9);
+        
+    
+        var popup_98cdc02b7a9d448da0f6f4a7705cd23c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25d9ac168a7e4aa99d10fdd7de7f421b = $(`<div id="html_25d9ac168a7e4aa99d10fdd7de7f421b" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE+</pre><pre>번호판: 112러9344 가격: 1880만원</pre></div>`)[0];
+            popup_98cdc02b7a9d448da0f6f4a7705cd23c.setContent(html_25d9ac168a7e4aa99d10fdd7de7f421b);
+        
+
+        marker_406efe1b689b40719ce39603501c75aa.bindPopup(popup_98cdc02b7a9d448da0f6f4a7705cd23c)
+        ;
+
+        
+    
+    
+            marker_406efe1b689b40719ce39603501c75aa.bindTooltip(
+                `<div>
+                     주식회사자동차마을
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd9b595120094f9ab8a49df3d5ac1efe = L.marker(
+                [37.5509, 126.8497],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_3ecec8a18348426ebf52b1c73bf482f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd9b595120094f9ab8a49df3d5ac1efe.setIcon(icon_3ecec8a18348426ebf52b1c73bf482f6);
+        
+    
+        var popup_0bd78f2717cd4ec88a13f4b5ad4851aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_655838d882034219aa28e5b811d00a5a = $(`<div id="html_655838d882034219aa28e5b811d00a5a" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 156다5067 가격: 2200만원</pre></div>`)[0];
+            popup_0bd78f2717cd4ec88a13f4b5ad4851aa.setContent(html_655838d882034219aa28e5b811d00a5a);
+        
+
+        marker_bd9b595120094f9ab8a49df3d5ac1efe.bindPopup(popup_0bd78f2717cd4ec88a13f4b5ad4851aa)
+        ;
+
+        
+    
+    
+            marker_bd9b595120094f9ab8a49df3d5ac1efe.bindTooltip(
+                `<div>
+                     (주)아이오토스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a5cbac9b21947bc95d66ada00d2902b = L.marker(
+                [37.2405741, 127.1785572],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_74f7d66adaf14c12bffe6b45b4f1da0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7a5cbac9b21947bc95d66ada00d2902b.setIcon(icon_74f7d66adaf14c12bffe6b45b4f1da0c);
+        
+    
+        var popup_28f1ac15b4024bf4907af713f2192418 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5f8362825ad4b2e970405f441f90e5a = $(`<div id="html_b5f8362825ad4b2e970405f441f90e5a" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 276머9658 가격: 2120만원</pre></div>`)[0];
+            popup_28f1ac15b4024bf4907af713f2192418.setContent(html_b5f8362825ad4b2e970405f441f90e5a);
+        
+
+        marker_7a5cbac9b21947bc95d66ada00d2902b.bindPopup(popup_28f1ac15b4024bf4907af713f2192418)
+        ;
+
+        
+    
+    
+            marker_7a5cbac9b21947bc95d66ada00d2902b.bindTooltip(
+                `<div>
+                     중고차마트
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d55dce23ca743c191341a348e9ab911 = L.marker(
+                [37.5635, 127.0365],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_c6ddc89dcf394614bb4f028af375a68b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5d55dce23ca743c191341a348e9ab911.setIcon(icon_c6ddc89dcf394614bb4f028af375a68b);
+        
+    
+        var popup_72a9c7b430ab43a88cd62169ea8e72a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4756b28c9b0448728c1c5f1b3aa9404d = $(`<div id="html_4756b28c9b0448728c1c5f1b3aa9404d" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 152로6168 가격: 2200만원</pre></div>`)[0];
+            popup_72a9c7b430ab43a88cd62169ea8e72a8.setContent(html_4756b28c9b0448728c1c5f1b3aa9404d);
+        
+
+        marker_5d55dce23ca743c191341a348e9ab911.bindPopup(popup_72a9c7b430ab43a88cd62169ea8e72a8)
+        ;
+
+        
+    
+    
+            marker_5d55dce23ca743c191341a348e9ab911.bindTooltip(
+                `<div>
+                     (주)더쿨
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f8e629226224144b4889d949c2ecb11 = L.marker(
+                [37.5509, 126.8497],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_2a17e1d9becf49a490ee4c96a4537dc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6f8e629226224144b4889d949c2ecb11.setIcon(icon_2a17e1d9becf49a490ee4c96a4537dc9);
+        
+    
+        var popup_9f650adb210e4942aa49d6f3e0c9f92c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5121d971b4fb4764b36ec22fd0bd3aa5 = $(`<div id="html_5121d971b4fb4764b36ec22fd0bd3aa5" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 180러7745 가격: 2300만원</pre></div>`)[0];
+            popup_9f650adb210e4942aa49d6f3e0c9f92c.setContent(html_5121d971b4fb4764b36ec22fd0bd3aa5);
+        
+
+        marker_6f8e629226224144b4889d949c2ecb11.bindPopup(popup_9f650adb210e4942aa49d6f3e0c9f92c)
+        ;
+
+        
+    
+    
+            marker_6f8e629226224144b4889d949c2ecb11.bindTooltip(
+                `<div>
+                     (주)아이오토스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c782b8ff37ac40ddb5fa1d1b6b77d7b0 = L.marker(
+                [37.5014422, 126.7660139],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_ee156e54bba84452825b6c9ff267042d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c782b8ff37ac40ddb5fa1d1b6b77d7b0.setIcon(icon_ee156e54bba84452825b6c9ff267042d);
+        
+    
+        var popup_75ae71fc24de4d33a97ba72957c1efe2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8eaded55c71420bb6e9fb8ee96aeb0d = $(`<div id="html_b8eaded55c71420bb6e9fb8ee96aeb0d" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 181로1135 가격: 2080만원</pre></div>`)[0];
+            popup_75ae71fc24de4d33a97ba72957c1efe2.setContent(html_b8eaded55c71420bb6e9fb8ee96aeb0d);
+        
+
+        marker_c782b8ff37ac40ddb5fa1d1b6b77d7b0.bindPopup(popup_75ae71fc24de4d33a97ba72957c1efe2)
+        ;
+
+        
+    
+    
+            marker_c782b8ff37ac40ddb5fa1d1b6b77d7b0.bindTooltip(
+                `<div>
+                     지에스모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35ce9f7dd8e7433facd2958e1c34453a = L.marker(
+                [36.9924966, 127.1127168],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_af91b6d1323546beb7518e51d85c6ffa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_35ce9f7dd8e7433facd2958e1c34453a.setIcon(icon_af91b6d1323546beb7518e51d85c6ffa);
+        
+    
+        var popup_9ba99e04ceca423fb93377f5e64d1def = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a5755eda7ca4567b8251fc152c808f5 = $(`<div id="html_5a5755eda7ca4567b8251fc152c808f5" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE+</pre><pre>번호판: 125도6513 가격: 2040만원</pre></div>`)[0];
+            popup_9ba99e04ceca423fb93377f5e64d1def.setContent(html_5a5755eda7ca4567b8251fc152c808f5);
+        
+
+        marker_35ce9f7dd8e7433facd2958e1c34453a.bindPopup(popup_9ba99e04ceca423fb93377f5e64d1def)
+        ;
+
+        
+    
+    
+            marker_35ce9f7dd8e7433facd2958e1c34453a.bindTooltip(
+                `<div>
+                     오케이엔카매매상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c553577a0cc84acd95c505c276bd05fa = L.marker(
+                [35.1521, 128.9911],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_c5a8dc6f12e944e995fa0a7b2e0706c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c553577a0cc84acd95c505c276bd05fa.setIcon(icon_c5a8dc6f12e944e995fa0a7b2e0706c6);
+        
+    
+        var popup_d3865fcefa6148dda335c9635c43c484 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07955047dc9241ea87cafc0c54c51b9a = $(`<div id="html_07955047dc9241ea87cafc0c54c51b9a" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE</pre><pre>번호판: 368라5374 가격: 2190만원</pre></div>`)[0];
+            popup_d3865fcefa6148dda335c9635c43c484.setContent(html_07955047dc9241ea87cafc0c54c51b9a);
+        
+
+        marker_c553577a0cc84acd95c505c276bd05fa.bindPopup(popup_d3865fcefa6148dda335c9635c43c484)
+        ;
+
+        
+    
+    
+            marker_c553577a0cc84acd95c505c276bd05fa.bindTooltip(
+                `<div>
+                     호야오토모빌
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b594daa3ad2549b6b42df9c58c7b869e = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_c14c7c07303941aebb677a67fcf8d285 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b594daa3ad2549b6b42df9c58c7b869e.setIcon(icon_c14c7c07303941aebb677a67fcf8d285);
+        
+    
+        var popup_158c4fb6561f4d4e995faf2626fef16b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a9e1358da3f4e75aad487d277a052e9 = $(`<div id="html_4a9e1358da3f4e75aad487d277a052e9" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 368가2499 가격: 2150만원</pre></div>`)[0];
+            popup_158c4fb6561f4d4e995faf2626fef16b.setContent(html_4a9e1358da3f4e75aad487d277a052e9);
+        
+
+        marker_b594daa3ad2549b6b42df9c58c7b869e.bindPopup(popup_158c4fb6561f4d4e995faf2626fef16b)
+        ;
+
+        
+    
+    
+            marker_b594daa3ad2549b6b42df9c58c7b869e.bindTooltip(
+                `<div>
+                     명문자동차
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4da2681fbb2a4a06a551af1c7e0b9351 = L.marker(
+                [37.2808823, 127.4429132],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_7c439fb8a0134fde94df00b0477ee2fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4da2681fbb2a4a06a551af1c7e0b9351.setIcon(icon_7c439fb8a0134fde94df00b0477ee2fd);
+        
+    
+        var popup_1d6b99c40ea54fd8bc80ad0edaba82a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e8452f82c6e433a9c0daea2bd0ad4bc = $(`<div id="html_0e8452f82c6e433a9c0daea2bd0ad4bc" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE</pre><pre>번호판: 344구7029 가격: 1990만원</pre></div>`)[0];
+            popup_1d6b99c40ea54fd8bc80ad0edaba82a6.setContent(html_0e8452f82c6e433a9c0daea2bd0ad4bc);
+        
+
+        marker_4da2681fbb2a4a06a551af1c7e0b9351.bindPopup(popup_1d6b99c40ea54fd8bc80ad0edaba82a6)
+        ;
+
+        
+    
+    
+            marker_4da2681fbb2a4a06a551af1c7e0b9351.bindTooltip(
+                `<div>
+                     (주)중앙자동차매매상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a319ac64b1645ecaa7095a99cb3c15b = L.marker(
+                [37.615461, 126.71578909999998],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_0c982638621848d4bb930b3028f54ad5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a319ac64b1645ecaa7095a99cb3c15b.setIcon(icon_0c982638621848d4bb930b3028f54ad5);
+        
+    
+        var popup_8c0ded1dbab545bab06735c286faebe3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bba9677073e4daeb55be1a062bb0ab0 = $(`<div id="html_1bba9677073e4daeb55be1a062bb0ab0" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 124가9101 가격: 2380만원</pre></div>`)[0];
+            popup_8c0ded1dbab545bab06735c286faebe3.setContent(html_1bba9677073e4daeb55be1a062bb0ab0);
+        
+
+        marker_0a319ac64b1645ecaa7095a99cb3c15b.bindPopup(popup_8c0ded1dbab545bab06735c286faebe3)
+        ;
+
+        
+    
+    
+            marker_0a319ac64b1645ecaa7095a99cb3c15b.bindTooltip(
+                `<div>
+                     (주)카포유
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01679d37bc1b48429851591aac8e0b59 = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_8ef37085a7424b1986fa3630ae049bd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_01679d37bc1b48429851591aac8e0b59.setIcon(icon_8ef37085a7424b1986fa3630ae049bd5);
+        
+    
+        var popup_cea16db9bde9449aa43e61fa64f3f78b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca277730613943bda9a85a3346472f4a = $(`<div id="html_ca277730613943bda9a85a3346472f4a" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 162오4780 가격: 2399만원</pre></div>`)[0];
+            popup_cea16db9bde9449aa43e61fa64f3f78b.setContent(html_ca277730613943bda9a85a3346472f4a);
+        
+
+        marker_01679d37bc1b48429851591aac8e0b59.bindPopup(popup_cea16db9bde9449aa43e61fa64f3f78b)
+        ;
+
+        
+    
+    
+            marker_01679d37bc1b48429851591aac8e0b59.bindTooltip(
+                `<div>
+                     카포인트
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f54f25fa5db2489381fb23b317595f4c = L.marker(
+                [35.152140100000004, 126.8900561],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_d30c7549e9cb404bbad44a2e245932a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f54f25fa5db2489381fb23b317595f4c.setIcon(icon_d30c7549e9cb404bbad44a2e245932a5);
+        
+    
+        var popup_1b51524c51c940ddb3298b7ccd88919c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_157a906ff80345aebe5d1febf8552de5 = $(`<div id="html_157a906ff80345aebe5d1febf8552de5" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE</pre><pre>번호판: 201저3756 가격: 2220만원</pre></div>`)[0];
+            popup_1b51524c51c940ddb3298b7ccd88919c.setContent(html_157a906ff80345aebe5d1febf8552de5);
+        
+
+        marker_f54f25fa5db2489381fb23b317595f4c.bindPopup(popup_1b51524c51c940ddb3298b7ccd88919c)
+        ;
+
+        
+    
+    
+            marker_f54f25fa5db2489381fb23b317595f4c.bindTooltip(
+                `<div>
+                     풍암오토월드(주)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc24076b18ee45849aa46abb08c6f3c1 = L.marker(
+                [37.4810539, 126.8631275],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_cd40a39ed60a4c0a87f64c9a84af4eef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cc24076b18ee45849aa46abb08c6f3c1.setIcon(icon_cd40a39ed60a4c0a87f64c9a84af4eef);
+        
+    
+        var popup_7a07f9cdedcd4d92ad3c00d256a48cd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba64248d56b94b9d9c7e09312c3d2891 = $(`<div id="html_ba64248d56b94b9d9c7e09312c3d2891" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 113더7443 가격: 2150만원</pre></div>`)[0];
+            popup_7a07f9cdedcd4d92ad3c00d256a48cd2.setContent(html_ba64248d56b94b9d9c7e09312c3d2891);
+        
+
+        marker_cc24076b18ee45849aa46abb08c6f3c1.bindPopup(popup_7a07f9cdedcd4d92ad3c00d256a48cd2)
+        ;
+
+        
+    
+    
+            marker_cc24076b18ee45849aa46abb08c6f3c1.bindTooltip(
+                `<div>
+                     주식회사 운산모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00cc93cd8a5b45e883b4881ac0597321 = L.marker(
+                [37.5014422, 126.7660139],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_0034628b004d4c4ab43133d4a0b40932 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_00cc93cd8a5b45e883b4881ac0597321.setIcon(icon_0034628b004d4c4ab43133d4a0b40932);
+        
+    
+        var popup_1ea65b7a02ee4f76a5f46fe5589bd326 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abb7ae41b25e4668bc75554d227a9194 = $(`<div id="html_abb7ae41b25e4668bc75554d227a9194" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 159다1022 가격: 2030만원</pre></div>`)[0];
+            popup_1ea65b7a02ee4f76a5f46fe5589bd326.setContent(html_abb7ae41b25e4668bc75554d227a9194);
+        
+
+        marker_00cc93cd8a5b45e883b4881ac0597321.bindPopup(popup_1ea65b7a02ee4f76a5f46fe5589bd326)
+        ;
+
+        
+    
+    
+            marker_00cc93cd8a5b45e883b4881ac0597321.bindTooltip(
+                `<div>
+                     지에스모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59834564b7b04c97ab4ac360ebb9a100 = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_38f896fa984f47fb8c66f4e694179d5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_59834564b7b04c97ab4ac360ebb9a100.setIcon(icon_38f896fa984f47fb8c66f4e694179d5c);
+        
+    
+        var popup_998963cd1091411b8c0ac17d7c595742 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32ceaa0511a14821a65e8979504eeb92 = $(`<div id="html_32ceaa0511a14821a65e8979504eeb92" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 109하1069 가격: 2200만원</pre></div>`)[0];
+            popup_998963cd1091411b8c0ac17d7c595742.setContent(html_32ceaa0511a14821a65e8979504eeb92);
+        
+
+        marker_59834564b7b04c97ab4ac360ebb9a100.bindPopup(popup_998963cd1091411b8c0ac17d7c595742)
+        ;
+
+        
+    
+    
+            marker_59834564b7b04c97ab4ac360ebb9a100.bindTooltip(
+                `<div>
+                     서수원모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e28d338fd0eb4dfcb22039c6f5e2bdd7 = L.marker(
+                [36.3468, 127.4157],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_3157f921da2b4909bbb89bba98d78583 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e28d338fd0eb4dfcb22039c6f5e2bdd7.setIcon(icon_3157f921da2b4909bbb89bba98d78583);
+        
+    
+        var popup_a582a56f1d6e498b84d720d73c658b7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba7d6f80adcc4d12a4a5476688ea7864 = $(`<div id="html_ba7d6f80adcc4d12a4a5476688ea7864" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE</pre><pre>번호판: 102주3481 가격: 1780만원</pre></div>`)[0];
+            popup_a582a56f1d6e498b84d720d73c658b7b.setContent(html_ba7d6f80adcc4d12a4a5476688ea7864);
+        
+
+        marker_e28d338fd0eb4dfcb22039c6f5e2bdd7.bindPopup(popup_a582a56f1d6e498b84d720d73c658b7b)
+        ;
+
+        
+    
+    
+            marker_e28d338fd0eb4dfcb22039c6f5e2bdd7.bindTooltip(
+                `<div>
+                     (주)대덕자동차
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a79a4e079534d59b6b87c1023677eb6 = L.marker(
+                [37.3217152, 126.8308604],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_5bfcf6c004eb41beb2948af3dd580cd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6a79a4e079534d59b6b87c1023677eb6.setIcon(icon_5bfcf6c004eb41beb2948af3dd580cd7);
+        
+    
+        var popup_c5b16e32ca4d49f5a3955ce1ae6c6f2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4232a34ab553436e99d9e669d404e36e = $(`<div id="html_4232a34ab553436e99d9e669d404e36e" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 128가6635 가격: 2350만원</pre></div>`)[0];
+            popup_c5b16e32ca4d49f5a3955ce1ae6c6f2f.setContent(html_4232a34ab553436e99d9e669d404e36e);
+        
+
+        marker_6a79a4e079534d59b6b87c1023677eb6.bindPopup(popup_c5b16e32ca4d49f5a3955ce1ae6c6f2f)
+        ;
+
+        
+    
+    
+            marker_6a79a4e079534d59b6b87c1023677eb6.bindTooltip(
+                `<div>
+                     한국자동차매매상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_645fea7e72d04ab3852e1c5b2f5a5a13 = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_9c750f87d38241e6beb48d98087c9345 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_645fea7e72d04ab3852e1c5b2f5a5a13.setIcon(icon_9c750f87d38241e6beb48d98087c9345);
+        
+    
+        var popup_4275c4f253e94b07853da6d972aac7bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75e6d45d9a5f45cf8405c2f0ac677bd8 = $(`<div id="html_75e6d45d9a5f45cf8405c2f0ac677bd8" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE+</pre><pre>번호판: 141머2562 가격: 2080만원</pre></div>`)[0];
+            popup_4275c4f253e94b07853da6d972aac7bd.setContent(html_75e6d45d9a5f45cf8405c2f0ac677bd8);
+        
+
+        marker_645fea7e72d04ab3852e1c5b2f5a5a13.bindPopup(popup_4275c4f253e94b07853da6d972aac7bd)
+        ;
+
+        
+    
+    
+            marker_645fea7e72d04ab3852e1c5b2f5a5a13.bindTooltip(
+                `<div>
+                     블루오토
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7d6e6df0cae42caa021ef4e7f6e33af = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_7d3f828802c64427b74593e04c8a26f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d7d6e6df0cae42caa021ef4e7f6e33af.setIcon(icon_7d3f828802c64427b74593e04c8a26f9);
+        
+    
+        var popup_3a4f09181ce8415abe1d8bcc2873ef4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6ba764fcfd947889960fa8b76a3b0a7 = $(`<div id="html_b6ba764fcfd947889960fa8b76a3b0a7" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE+</pre><pre>번호판: 228우4555 가격: 1440만원</pre></div>`)[0];
+            popup_3a4f09181ce8415abe1d8bcc2873ef4c.setContent(html_b6ba764fcfd947889960fa8b76a3b0a7);
+        
+
+        marker_d7d6e6df0cae42caa021ef4e7f6e33af.bindPopup(popup_3a4f09181ce8415abe1d8bcc2873ef4c)
+        ;
+
+        
+    
+    
+            marker_d7d6e6df0cae42caa021ef4e7f6e33af.bindTooltip(
+                `<div>
+                     중앙A+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e456d1503ba4f44bbbe45c73291eba3 = L.marker(
+                [35.152140100000004, 126.8900561],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_6f27dbb4c4a148f691948e011e80b65e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1e456d1503ba4f44bbbe45c73291eba3.setIcon(icon_6f27dbb4c4a148f691948e011e80b65e);
+        
+    
+        var popup_026eb88435e24ec880b63518182c5f31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eeb6aea4f410466ea01e028a0c6a8507 = $(`<div id="html_eeb6aea4f410466ea01e028a0c6a8507" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE</pre><pre>번호판: 160소2626 가격: 2220만원</pre></div>`)[0];
+            popup_026eb88435e24ec880b63518182c5f31.setContent(html_eeb6aea4f410466ea01e028a0c6a8507);
+        
+
+        marker_1e456d1503ba4f44bbbe45c73291eba3.bindPopup(popup_026eb88435e24ec880b63518182c5f31)
+        ;
+
+        
+    
+    
+            marker_1e456d1503ba4f44bbbe45c73291eba3.bindTooltip(
+                `<div>
+                     풍암오토월드(주)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af98b93480d746dfba3c4960947b3a68 = L.marker(
+                [35.152140100000004, 126.8900561],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_d27be8179ea2414a909029c6f6e50e95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_af98b93480d746dfba3c4960947b3a68.setIcon(icon_d27be8179ea2414a909029c6f6e50e95);
+        
+    
+        var popup_905c478a6c114990b09200f184395458 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c5a9d44f7904e949b1916049e4c6da2 = $(`<div id="html_0c5a9d44f7904e949b1916049e4c6da2" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 398버5301 가격: 2250만원</pre></div>`)[0];
+            popup_905c478a6c114990b09200f184395458.setContent(html_0c5a9d44f7904e949b1916049e4c6da2);
+        
+
+        marker_af98b93480d746dfba3c4960947b3a68.bindPopup(popup_905c478a6c114990b09200f184395458)
+        ;
+
+        
+    
+    
+            marker_af98b93480d746dfba3c4960947b3a68.bindTooltip(
+                `<div>
+                     풍암오토월드(주)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67d2b38b4b59464f88c19910ee3b847a = L.marker(
+                [37.2633325, 127.0287472],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_5a37f519162246a383cefc5aeb038897 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_67d2b38b4b59464f88c19910ee3b847a.setIcon(icon_5a37f519162246a383cefc5aeb038897);
+        
+    
+        var popup_7c1c13bff4194d3e996e243b59904b1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a7430e662d048a4b6f6e6157c79d37f = $(`<div id="html_2a7430e662d048a4b6f6e6157c79d37f" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 180수4090 가격: 2250만원</pre></div>`)[0];
+            popup_7c1c13bff4194d3e996e243b59904b1d.setContent(html_2a7430e662d048a4b6f6e6157c79d37f);
+        
+
+        marker_67d2b38b4b59464f88c19910ee3b847a.bindPopup(popup_7c1c13bff4194d3e996e243b59904b1d)
+        ;
+
+        
+    
+    
+            marker_67d2b38b4b59464f88c19910ee3b847a.bindTooltip(
+                `<div>
+                     (주)모터프라자
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_239608e64efc4d8fb7042a7b7dedb27d = L.marker(
+                [37.5509, 126.8497],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_656bd74560be4d05ab0b14f69e241ce8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_239608e64efc4d8fb7042a7b7dedb27d.setIcon(icon_656bd74560be4d05ab0b14f69e241ce8);
+        
+    
+        var popup_4791f3346be34ed0b1e3d1377392600a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df2df07964b441b7b4897d97fe9f5627 = $(`<div id="html_df2df07964b441b7b4897d97fe9f5627" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE</pre><pre>번호판: 179너4674 가격: 2190만원</pre></div>`)[0];
+            popup_4791f3346be34ed0b1e3d1377392600a.setContent(html_df2df07964b441b7b4897d97fe9f5627);
+        
+
+        marker_239608e64efc4d8fb7042a7b7dedb27d.bindPopup(popup_4791f3346be34ed0b1e3d1377392600a)
+        ;
+
+        
+    
+    
+            marker_239608e64efc4d8fb7042a7b7dedb27d.bindTooltip(
+                `<div>
+                     홍모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88685565e6bb4b0fae9199ce7ada0f7e = L.marker(
+                [35.2382, 128.6925],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_c304b32878fe48f2aef01aa5813cd6a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_88685565e6bb4b0fae9199ce7ada0f7e.setIcon(icon_c304b32878fe48f2aef01aa5813cd6a2);
+        
+    
+        var popup_c8872a64f55d468496b5a393ad16524d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd09368400764a15abe7deb2dec98636 = $(`<div id="html_dd09368400764a15abe7deb2dec98636" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline RE Signature</pre><pre>번호판: 333마6575 가격: 2400만원</pre></div>`)[0];
+            popup_c8872a64f55d468496b5a393ad16524d.setContent(html_dd09368400764a15abe7deb2dec98636);
+        
+
+        marker_88685565e6bb4b0fae9199ce7ada0f7e.bindPopup(popup_c8872a64f55d468496b5a393ad16524d)
+        ;
+
+        
+    
+    
+            marker_88685565e6bb4b0fae9199ce7ada0f7e.bindTooltip(
+                `<div>
+                     동아자동차매매상사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31a36c6798774019a8c7348309a82ccf = L.marker(
+                [35.24835020000001, 128.67521344186662],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_4c3f834383ae4684b14e0c31e81394a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_31a36c6798774019a8c7348309a82ccf.setIcon(icon_4c3f834383ae4684b14e0c31e81394a1);
+        
+    
+        var popup_58cddb7e6bce48e4b85bbdd01a4ec035 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31d6ab6e0a6643acab44c8eaa4ac8811 = $(`<div id="html_31d6ab6e0a6643acab44c8eaa4ac8811" style="width: 100.0%; height: 100.0%;"><pre>XM31.3 Turbo Gasoline LE</pre><pre>번호판: 109거3914 가격: 1820만원</pre></div>`)[0];
+            popup_58cddb7e6bce48e4b85bbdd01a4ec035.setContent(html_31d6ab6e0a6643acab44c8eaa4ac8811);
+        
+
+        marker_31a36c6798774019a8c7348309a82ccf.bindPopup(popup_58cddb7e6bce48e4b85bbdd01a4ec035)
+        ;
+
+        
+    
+    
+            marker_31a36c6798774019a8c7348309a82ccf.bindTooltip(
+                `<div>
+                     (주)도전
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc9ead32f75741a9b7bf1225fb51d3ec = L.marker(
+                [35.5826, 129.3604],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_498f86c2adee4a32b3949ef54467613f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fc9ead32f75741a9b7bf1225fb51d3ec.setIcon(icon_498f86c2adee4a32b3949ef54467613f);
+        
+    
+        var popup_7565326a161c4428a20fb94f54c52050 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdfb7fc8015a4866ba6075b69d5f9aa5 = $(`<div id="html_fdfb7fc8015a4866ba6075b69d5f9aa5" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE</pre><pre>번호판: 149하5100 가격: 1650만원</pre></div>`)[0];
+            popup_7565326a161c4428a20fb94f54c52050.setContent(html_fdfb7fc8015a4866ba6075b69d5f9aa5);
+        
+
+        marker_fc9ead32f75741a9b7bf1225fb51d3ec.bindPopup(popup_7565326a161c4428a20fb94f54c52050)
+        ;
+
+        
+    
+    
+            marker_fc9ead32f75741a9b7bf1225fb51d3ec.bindTooltip(
+                `<div>
+                     주식회사 마이카페이지 울산
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83152f1596e842b7950b948fd528f0fa = L.marker(
+                [37.5509, 126.8497],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_bd42c2a418cd49c7859dc1ca68f3a147 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_83152f1596e842b7950b948fd528f0fa.setIcon(icon_bd42c2a418cd49c7859dc1ca68f3a147);
+        
+    
+        var popup_cf149d57d1e34274b64ba9f7d6e29cdb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00f3e83b562446bebf233957b31de98d = $(`<div id="html_00f3e83b562446bebf233957b31de98d" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE+</pre><pre>번호판: 243더6462 가격: 1990만원</pre></div>`)[0];
+            popup_cf149d57d1e34274b64ba9f7d6e29cdb.setContent(html_00f3e83b562446bebf233957b31de98d);
+        
+
+        marker_83152f1596e842b7950b948fd528f0fa.bindPopup(popup_cf149d57d1e34274b64ba9f7d6e29cdb)
+        ;
+
+        
+    
+    
+            marker_83152f1596e842b7950b948fd528f0fa.bindTooltip(
+                `<div>
+                     주식회사 피스모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc6d6dc2b5184636b8440281d63770b1 = L.marker(
+                [37.545, 126.676],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_124ce69682284ca4a35b9aee024ef95a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fc6d6dc2b5184636b8440281d63770b1.setIcon(icon_124ce69682284ca4a35b9aee024ef95a);
+        
+    
+        var popup_06f2d935993b4245bbc18a16b0854f7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_666498bec21d4057bd4a80e23f287041 = $(`<div id="html_666498bec21d4057bd4a80e23f287041" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe SE</pre><pre>번호판: 307러3537 가격: 1530만원</pre></div>`)[0];
+            popup_06f2d935993b4245bbc18a16b0854f7a.setContent(html_666498bec21d4057bd4a80e23f287041);
+        
+
+        marker_fc6d6dc2b5184636b8440281d63770b1.bindPopup(popup_06f2d935993b4245bbc18a16b0854f7a)
+        ;
+
+        
+    
+    
+            marker_fc6d6dc2b5184636b8440281d63770b1.bindTooltip(
+                `<div>
+                     카누리모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_636647e099ed4f8db2ee23b82015038f = L.marker(
+                [35.1521, 128.9911],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_b60e78904d464363afea133734c1545f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_636647e099ed4f8db2ee23b82015038f.setIcon(icon_b60e78904d464363afea133734c1545f);
+        
+    
+        var popup_001277cae1d042929fd5f40c2c4b731a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21fe47c330c749a3bdb0696da249bb5e = $(`<div id="html_21fe47c330c749a3bdb0696da249bb5e" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe RE</pre><pre>번호판: 249로8301 가격: 2180만원</pre></div>`)[0];
+            popup_001277cae1d042929fd5f40c2c4b731a.setContent(html_21fe47c330c749a3bdb0696da249bb5e);
+        
+
+        marker_636647e099ed4f8db2ee23b82015038f.bindPopup(popup_001277cae1d042929fd5f40c2c4b731a)
+        ;
+
+        
+    
+    
+            marker_636647e099ed4f8db2ee23b82015038f.bindTooltip(
+                `<div>
+                     드림모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4065a0f24275482a9dfd37bb2093db25 = L.marker(
+                [37.545, 126.676],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_6bd67fe62e084d2aa28c711e3a3f87c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4065a0f24275482a9dfd37bb2093db25.setIcon(icon_6bd67fe62e084d2aa28c711e3a3f87c2);
+        
+    
+        var popup_ad1784e7380a46b0bd02061f2d191ee6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b666a3cb1ee54f38b5174ded1f60a973 = $(`<div id="html_b666a3cb1ee54f38b5174ded1f60a973" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe SE</pre><pre>번호판: 258고8604 가격: 1490만원</pre></div>`)[0];
+            popup_ad1784e7380a46b0bd02061f2d191ee6.setContent(html_b666a3cb1ee54f38b5174ded1f60a973);
+        
+
+        marker_4065a0f24275482a9dfd37bb2093db25.bindPopup(popup_ad1784e7380a46b0bd02061f2d191ee6)
+        ;
+
+        
+    
+    
+            marker_4065a0f24275482a9dfd37bb2093db25.bindTooltip(
+                `<div>
+                     원스탑모터스(주)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b5e04a8676e4ee3b450b61fe421fe6f = L.marker(
+                [35.8716, 128.5591],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_3c996e6b96924b8ca7421ad0d58b9a30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5b5e04a8676e4ee3b450b61fe421fe6f.setIcon(icon_3c996e6b96924b8ca7421ad0d58b9a30);
+        
+    
+        var popup_9f8b3357d25e45b9bd5032356d6701c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0a5a561359744f0b9ee64a2c5b37e0b = $(`<div id="html_b0a5a561359744f0b9ee64a2c5b37e0b" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe SE</pre><pre>번호판: 230도1467 가격: 1480만원</pre></div>`)[0];
+            popup_9f8b3357d25e45b9bd5032356d6701c1.setContent(html_b0a5a561359744f0b9ee64a2c5b37e0b);
+        
+
+        marker_5b5e04a8676e4ee3b450b61fe421fe6f.bindPopup(popup_9f8b3357d25e45b9bd5032356d6701c1)
+        ;
+
+        
+    
+    
+            marker_5b5e04a8676e4ee3b450b61fe421fe6f.bindTooltip(
+                `<div>
+                     T-1 모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72089523412844688d2413a5902fdad6 = L.marker(
+                [37.5509, 126.8497],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_790263120d6048e49908a8e18ebed5f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_72089523412844688d2413a5902fdad6.setIcon(icon_790263120d6048e49908a8e18ebed5f5);
+        
+    
+        var popup_7ec4191843e543c5a9a27ae2da62a8a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08bb4e1dd0054d7aa42037f89a75af5c = $(`<div id="html_08bb4e1dd0054d7aa42037f89a75af5c" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE+</pre><pre>번호판: 222버1264 가격: 1870만원</pre></div>`)[0];
+            popup_7ec4191843e543c5a9a27ae2da62a8a4.setContent(html_08bb4e1dd0054d7aa42037f89a75af5c);
+        
+
+        marker_72089523412844688d2413a5902fdad6.bindPopup(popup_7ec4191843e543c5a9a27ae2da62a8a4)
+        ;
+
+        
+    
+    
+            marker_72089523412844688d2413a5902fdad6.bindTooltip(
+                `<div>
+                     나래자동차
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c5ed34a9f494962a51bcfbdd24599b1 = L.marker(
+                [35.5826, 129.3604],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_7daa604b7e8849adb26d4a224fb9c220 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2c5ed34a9f494962a51bcfbdd24599b1.setIcon(icon_7daa604b7e8849adb26d4a224fb9c220);
+        
+    
+        var popup_31b9521f37e642a9bb37d9a4e6dd45c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1e480ac313f4863b38ffb14b3c62f4a = $(`<div id="html_e1e480ac313f4863b38ffb14b3c62f4a" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE+</pre><pre>번호판: 355너1110 가격: 2080만원</pre></div>`)[0];
+            popup_31b9521f37e642a9bb37d9a4e6dd45c7.setContent(html_e1e480ac313f4863b38ffb14b3c62f4a);
+        
+
+        marker_2c5ed34a9f494962a51bcfbdd24599b1.bindPopup(popup_31b9521f37e642a9bb37d9a4e6dd45c7)
+        ;
+
+        
+    
+    
+            marker_2c5ed34a9f494962a51bcfbdd24599b1.bindTooltip(
+                `<div>
+                     나인모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11982a03464748df8ce361fe7ef853be = L.marker(
+                [35.1521, 128.9911],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_5faee08d008a4e5ca26d65d4cf1fc7c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_11982a03464748df8ce361fe7ef853be.setIcon(icon_5faee08d008a4e5ca26d65d4cf1fc7c0);
+        
+    
+        var popup_9499f877b54c4b49a1cdf2cecb136a9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08d20680fd834dd89992f232b39178b7 = $(`<div id="html_08d20680fd834dd89992f232b39178b7" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE</pre><pre>번호판: 170다3368 가격: 1930만원</pre></div>`)[0];
+            popup_9499f877b54c4b49a1cdf2cecb136a9f.setContent(html_08d20680fd834dd89992f232b39178b7);
+        
+
+        marker_11982a03464748df8ce361fe7ef853be.bindPopup(popup_9499f877b54c4b49a1cdf2cecb136a9f)
+        ;
+
+        
+    
+    
+            marker_11982a03464748df8ce361fe7ef853be.bindTooltip(
+                `<div>
+                     서원모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2da964b8881402d9f888301ce62d2a7 = L.marker(
+                [37.545, 126.676],
+                {}
+            ).addTo(marker_cluster_b5090ef68f35448790fbb2b77ba77e99);
+        
+    
+            var icon_91a5b5baa63b4020a2e1b762f430c9f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "Car", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a2da964b8881402d9f888301ce62d2a7.setIcon(icon_91a5b5baa63b4020a2e1b762f430c9f2);
+        
+    
+        var popup_a094fc35df17429b9679be7ef561b17f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b131957b26e4a849c4bd630850e0d7e = $(`<div id="html_8b131957b26e4a849c4bd630850e0d7e" style="width: 100.0%; height: 100.0%;"><pre>XM31.6 GTe LE+</pre><pre>번호판: 239소2488 가격: 2039만원</pre></div>`)[0];
+            popup_a094fc35df17429b9679be7ef561b17f.setContent(html_8b131957b26e4a849c4bd630850e0d7e);
+        
+
+        marker_a2da964b8881402d9f888301ce62d2a7.bindPopup(popup_a094fc35df17429b9679be7ef561b17f)
+        ;
+
+        
+    
+    
+            marker_a2da964b8881402d9f888301ce62d2a7.bindTooltip(
+                `<div>
+                     주식회사 지후모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
