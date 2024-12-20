@@ -2,9 +2,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:todo_app/utils/constants.dart';
-import 'package:todo_app/utils/databaseUtil.dart';
-import 'package:todo_app/widgets/update_task_dialog.dart';
+import 'package:flutter_todo_app/utils/constants.dart';
+import 'package:flutter_todo_app/utils/databaseUtil.dart';
+import 'package:flutter_todo_app/widgets/update_task_dialog.dart';
 
 import '../utils/colors.dart';
 import '../widgets/delete_task_dialog.dart';

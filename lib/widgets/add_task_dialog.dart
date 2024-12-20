@@ -3,8 +3,8 @@ import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:todo_app/utils/constants.dart';
-import 'package:todo_app/utils/databaseUtil.dart';
+import 'package:flutter_todo_app/utils/constants.dart';
+import 'package:flutter_todo_app/utils/databaseUtil.dart';
 
 class AddTaskAlertDialog extends StatefulWidget {
   const AddTaskAlertDialog({

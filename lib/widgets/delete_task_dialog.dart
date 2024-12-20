@@ -2,8 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:todo_app/utils/constants.dart';
-import 'package:todo_app/utils/databaseUtil.dart';
+import 'package:flutter_todo_app/utils/constants.dart';
+import 'package:flutter_todo_app/utils/databaseUtil.dart';
 
 class DeleteTaskDialog extends StatefulWidget {
   final String taskId, taskName;

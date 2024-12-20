@@ -1,4 +1,4 @@
-# todo_app
+# flutter_todo_app
 
 To-Do List Application in Flutter using Firebase </br>
 Implements the CRUD DB functions </br>
